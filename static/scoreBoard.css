@@ -179,6 +179,9 @@
     -webkit-text-fill-color: yellow;;
 }
 
+#D {
+    -webkit-text-fill-color: green;;
+}
 .timer {
     border-bottom: none;
     border-right: none;

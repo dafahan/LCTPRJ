@@ -65,8 +65,9 @@
         Semifinal Grup 1
     </div>
     <div class="logo-kanan">
-        <img src="{{ url_for('static', filename='res/lct/hima.png') }}">
         <img src="{{ url_for('static', filename='res/lct/unila.png') }}">
+        <img src="{{ url_for('static', filename='res/lct/hima.png') }}">
+        
     </div>
 
     <div class="container score-panel" style="padding-bottom: 5px;">
@@ -93,6 +94,14 @@
             <input type="text" id="fieldC" class="field">
             <!-- <div id="addC" class="button addAll">+</div> -->
             <div id="resetC" class="button resetAll">reset</div>
+        </div>
+
+        <div class="team" id="teamD" style="display: none;">
+            <div id="D" class="label">D</div>
+            <div id="scoreD" class="score">0</div>
+            <input type="text" id="fieldD" class="field">
+            <!-- <div id="addC" class="button addAll">+</div> -->
+            <div id="resetD" class="button resetAll">reset</div>
         </div>
     </div>
     <br>
@@ -383,6 +392,8 @@
         let labelA = document.getElementById('A');
         let labelB = document.getElementById('B');
         let labelC = document.getElementById('C');
+        let labelD = document.getElementById('D');
+        {
         labelA.addEventListener('click',function(e){
             e.preventDefault();
             turn = 0;
@@ -398,11 +409,25 @@
             turn = 2;
             updateLabelBorders();
         })
+        labelD.addEventListener('click',(e)=>{
+            e.preventDefault();
+            turn = 3;
+            updateLabelBorders();
+        })
+        }
         let logoKiri = document.getElementsByClassName('logo-kiri');
+        let logoKanan = document.getElementsByClassName('logo-kanan');
+
+        logoKanan[0].addEventListener('click',(e)=>{
+            mode4 = true;
+            document.getElementById('teamD').style.display = 'flex';
+        })
+
         updateLabelBorders();
         logoKiri[0].addEventListener('click',function(e){
             turn++;
-            turn%=3
+            if(mode4)turn%=4;
+            else turn%=3
             updateLabelBorders();
             console.log(turn);
         })
@@ -411,17 +436,6 @@
         let question = '';
         let answer = '';
           
-
-        
-        // Print the matrix
-        /*
-        for (let i = 0; i < 6; i++) {
-          for (let j = 0; j < 6; j++) {
-            console.log(matrix[i][j]+' ')
-          }
-          console.log('');
-        }
-        */
         for (let i = 0; i < 6; i++) {
             for(let j = 0; j<6; j++){
 
@@ -461,14 +475,16 @@
                 
                 if(turn == 0)matrix[curI][curJ] = 10;
                 else if(turn == 1)matrix[curI][curJ]=20;
-                else matrix[curI][curJ]=30;
+                else if(turn == 2)matrix[curI][curJ]=30;
+                else matrix[curI][curJ]=40;
                 console.log(matrix[curI][curJ]);
                 updateLabelBorders();
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
                  que.innerHTML = 'Pertanyaan';
                  ans.innerHTML = '';
                  turn = turn+1;
-                turn%=3;
+                 if(mode4)turn%=4;
+                else turn%=3;
                 updateLabelBorders();
                 console.log(turn);
         })
@@ -483,8 +499,12 @@
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: blue;' >B</button>";
                  matrix[curI][curJ] = 1;
                 console.log(matrix[curI][curJ]);
-            }else{
+            }else if(turn==2){
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: yellow;' >C</button>";
+                 matrix[curI][curJ] = 2;
+                console.log(matrix[curI][curJ]);
+            }else{
+                blocknow.innerHTML = "<button class='btn-custom marked' style='background: green;' >D</button>";
                  matrix[curI][curJ] = 2;
                 console.log(matrix[curI][curJ]);
             }
@@ -493,14 +513,15 @@
             // Check if any row has the same value in all elements
 
              turn = turn+1;
-            
-            turn%=3;
+             if(mode4)turn%=4;
+                else turn%=3;
             updateLabelBorders();
         })
         function updateLabelBorders() {
              tmpA = 0;
              tmpB = 0;
              tmpC = 0;
+             tmpD = 0;
             for (let i = 0; i < matrix.length; i++) {
               let row = matrix[i];
               let firstValue = row[0];
@@ -511,6 +532,7 @@
                     if(firstValue == 0 )tmpA++;
                     if(firstValue == 1)tmpB++;
                     if(firstValue == 2)tmpC++;
+                    if(firstValue == 3)tmpD++;
                     console.log('Row', i, 'has same value:', firstValue);
                   }
                 }
@@ -527,6 +549,7 @@
                         if(firstValue == 0 )tmpA++;
                     if(firstValue == 1)tmpB++;
                     if(firstValue == 2)tmpC++;
+                    if(firstValue == 3)tmpD++;
                         console.log('Column', j, 'has same value:', firstValue);
                       }
                 }
@@ -545,19 +568,32 @@
                 bonusC = tmpC;
                 scoreC.innerHTML = storedScoreC;
 
-            turn%=3;
+                storedScoreD += (tmpD-bonusD)*correct;
+                bonusD = tmpD;
+                scoreD.innerHTML = storedScoreD;
+
+                if(mode4)turn%=4;
+                else turn%=3;
           if(turn==0){
             labelA.style.border = 'solid black 1px';
             labelB.style.border = 'none';
             labelC.style.border = 'none';
+            labelD.style.border = 'none';
           } else if (turn == 1) {
             labelA.style.border = 'none';
             labelB.style.border = 'solid black 1px';
             labelC.style.border = 'none';
-          } else {
+            labelD.style.border = 'none';
+          } else if(turn == 2) {
             labelA.style.border = 'none';
             labelB.style.border = 'none';
             labelC.style.border = 'solid black 1px';
+            labelD.style.border = 'none';
+          } else{
+            labelA.style.border = 'none';
+            labelB.style.border = 'none';
+            labelC.style.border = 'none';
+            labelD.style.border = 'solid black 1px';
           }
 
         }
