@@ -1,0 +1,178 @@
+*,html{
+  margin: 0;
+  padding: 0;
+
+}
+.alert{
+ 
+}
+.navbar{
+  border-bottom-right-radius: 20px;
+}
+.svg-frame {
+  z-index: -1;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-frame svg {
+  position: absolute;
+  transition: .5s;
+  z-index: calc(1 - (0.2 * var(--j)));
+  transform-origin: center;
+  width: 344px;
+  height: 344px;
+  fill: none;
+}
+
+.svg-frame:hover svg {
+  transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+}
+
+.svg-frame svg #center {
+  transition: .5s;
+  transform-origin: center;
+}
+
+.svg-frame:hover svg #center {
+  transform: rotate(-30deg) translateX(45px) translateY(-3px);
+}
+
+#out2 {
+  animation: rotate16 7s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#out3 {
+  animation: rotate16 3s ease-in-out infinite alternate;
+  transform-origin: center;
+  stroke: #ff0;
+}
+
+#inner3,
+#inner1 {
+  animation: rotate16 4s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#center1 {
+  fill: #ff0;
+  animation: rotate16 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes rotate16 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background: url("/static/img/bg.jpg"),rgb(0,0,0,0.6);
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+}
+.navbar-brand{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5%;
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #212529 /*<!--rgba(24, 20, 20, 0.987)> */;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #63cdf2;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #63cdf2,
+              0 0 25px #63cdf2,
+              0 0 50px #63cdf2,
+              0 0 100px #63cdf2;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #63cdf2);
+  animation: btn-anim1 2s linear infinite;
+}

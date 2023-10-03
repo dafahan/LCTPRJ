@@ -1,0 +1,243 @@
+.container {
+    border: 3px solid rgb(1, 1, 80);
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: absolute;
+
+    background-color: white;
+}
+
+#title {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: black;
+}
+
+.team {
+    padding: 0px 5px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* border: 2px solid black; */
+    margin: 5px;
+    box-sizing: border-box;
+    height: 60px;
+    width: 150px;
+    border: 2px solid white;
+}
+
+#teamA {
+    transition: 1s;
+}
+
+#teamA:hover {
+    border: 2px solid red;
+}
+
+#teamB {
+    transition: 1s;
+}
+
+#teamB:hover {
+    border-width: 2px;
+    border-color: blue;
+}
+
+#teamC {
+    transition: 1s;
+}
+
+#teamC:hover {
+    border-width: 2px;
+    border-color: yellow;
+}
+
+#teamD {
+    transition: 1s;
+}
+
+#teamD:hover {
+    border-width: 2px;
+    border-color: green;
+}
+
+.resetAll {
+    box-sizing: content-box;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    height: 22px;
+    width: 30px;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.addAll {
+    box-sizing: content-box;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 22px;
+    width: 30px;
+    font-size: 5px;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 30px;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    height: 19px;
+    text-align: center;
+    font-size: 10px;
+    transition: .8s;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 10px;
+    height: 18px;
+    width: 30px;
+    transition: .8s;
+}
+
+.button:hover {
+    background: chocolate;
+}
+
+.field:hover {
+    border-bottom: 2px solid orange;
+    background: rgb(230, 230, 230);
+    border-radius: 28% 28% 20% 20%;
+}
+
+.field:focus {
+    outline: none;    
+}
+
+.label {
+    position: relative;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: brown;
+}
+
+.score {
+    position: relative;
+    left: -2px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 2s;
+}
+
+#A {
+    -webkit-text-fill-color: red;
+}
+
+#B {
+    -webkit-text-fill-color: blue;
+}
+
+#C {
+    -webkit-text-fill-color: yellow;;
+}
+
+#D {
+    -webkit-text-fill-color: green;
+}
+
+.timer {
+    border-left: 2px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    position: relative;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    transition: .8s;
+}
+
+.timer:hover {
+    border-width: 2px;
+    border-color: rgb(26, 6, 97);
+    border-left: 2px solid rgb(26, 6, 97);
+    border-top: 2px solid rgb(26, 6, 97);
+    border-bottom: 2px solid rgb(26, 6, 97);
+}
+
+#timer_title {
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#pause {
+    bottom: 4px;
+    position: absolute;
+    right: 40px;
+}
+
+#seconds {
+    position: relative;
+    left: -30px;
+    font-weight: bold;
+    font-size: 22px;
+    top: 7px;
+}
+
+#reset_timer {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+
+#start_button {
+    position: absolute;
+    align-items: center;
+    top: 4px;
+    right: 40px;
+}
+
+.set_timer {
+    position: relative;
+    right: 4px;
+}

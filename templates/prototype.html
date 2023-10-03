@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Modal Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style type="text/css">
+  	.question>div>h1{
+  		font-size: 25px;
+  	}
+  	.question>div>div>h2{
+  		font-size: 25px;
+  	}
+  	.ans-box{
+  		margin-left: 30vh;
+  	}
+  </style>
+  <body>
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quizModal">
+  Start Quiz
+</button>
+	<div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quizModalLabel">Quiz Question</h5>
+        <a href="" data-dismiss="modal"><i class="fa fa-window-close" style="color:black;font-size: 20px;" aria-hidden="true"></i></a>
+      </div>
+		      <div class="modal-body">
+		  <div class="question">
+		    <div id="que" onclick="reveal1(this)">Pertanyaan</div>
+		    <br><br><br>
+		    <div class="ans">
+		      <div id="ans" class="ans-box" onclick="reveal2(this)"></div>
+		    </div>
+		  </div>
+		</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" id="wrongBtn"  data-dismiss="modal">Wrong</button>
+        <button type="button" class="btn btn-success" id="correctBtn"  data-dismiss="modal">Correct</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function reveal1(que){
+            que.innerHTML = "<h1>Fungsi yang digunakan untuk menghitung hasil sisa pembagian pada Microsoft Excel adalah?</h1>";
+            document.getElementById('ans').innerHTML = "(Jawaban)";
+        };
+        function reveal2(ans){
+            ans.innerHTML = "<h2>MOD()</h2>";
+        };
+    	var correctBtn = document.getElementById('correctBtn');
+var wrongBtn = document.getElementById('wrongBtn');
+
+correctBtn.addEventListener('click', function() {
+  // Perform action for correct answer
+});
+
+wrongBtn.addEventListener('click', function() {
+  // Perform action for wrong answer
+});
+
+
+    </script>
+  </body>
+  </html>

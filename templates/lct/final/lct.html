@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lct.css" rel="stylesheet">
+    <link rel="stylesheet" href="scoreBoard.css">
+    <title>LCT Komputer PRJ IX</title>
+    <style type="text/css">
+        .tic{
+    margin: auto;
+    font-size: 30px;
+    
+}
+
+.btn-custom{
+    width: 60px;
+    height: 60px;
+    font-weight:700;
+}
+
+.cs-center{
+    margin: auto;
+    text-align: center;
+}
+
+.round-b{
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.logo-kiri{
+    position: fixed;
+    height: 76px;
+}
+.logo-kiri>img{
+    height: inherit;
+}
+
+.logo-kanan{
+    right: 0pt;
+    position: fixed;
+    height: 76px;
+}
+.logo-kanan>img{
+    margin: 3px;
+    height: inherit;
+}
+.cs_title{
+    top: 80px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.cs_title2{
+    top: 80px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+
+.q-num{
+    border-right: 5px solid black;
+    text-align: center;
+    font-size: 150px;
+}
+
+.ans-container{
+    text-align: center;
+}
+
+#ans{
+    width: fit-content;
+    margin: auto;
+}
+
+#ans:hover{
+    cursor: pointer;
+}
+
+#ans > h2{
+    color: maroon;
+}
+
+#que:hover{
+    cursor: pointer;
+}
+
+.btn-home{
+    border-right: 3px solid rgb(1, 1, 80);
+    padding: 15px;
+}
+
+.btn-home > svg{
+    cursor: pointer;
+}
+
+canvas {
+    background: transparent;
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    left: 0;
+    right: 0;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.cs_button{
+    font-size: xx-large;
+    font-weight: 500;
+    width: 100px;
+    height: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="top-0 end-0 position-absolute logo-kiri">
+        <img src="logo.png">
+    </div>
+    <div class="cs_title">
+        LCT Komputer <br>
+        Demo Final
+    </div>
+    <div class="logo-kanan">
+        <img src="hima.png">
+        <img src="unila.png">
+    </div>
+
+    <div class="container score-panel">
+        <!-- <div id="title">Score Board</div> -->
+        <div class="team" id="teamA">
+            <div id="A" class="label">A</div>
+            <div id="scoreA" class="score">0</div>
+            <input type="text" id="fieldA" class="field">
+            <!-- <div id="addA" class="button addAll">+</div> -->
+            <div id="resetA" class="button resetAll">reset</div>
+        </div>
+
+        <div class="team" id="teamB">
+            <div id="B" class="label">B</div>
+            <div id="scoreB" class="score">0</div>
+            <input type="text" id="fieldB" class="field">
+            <!-- <div id="addB" class="button addAll">+</div> -->
+            <div id="resetB" class="button resetAll">reset</div>
+        </div>
+
+        <div class="team" id="teamC">
+            <div id="C" class="label">C</div>
+            <div id="scoreC" class="score">0</div>
+            <input type="text" id="fieldC" class="field">
+            <!-- <div id="addC" class="button addAll">+</div> -->
+            <div id="resetC" class="button resetAll">reset</div>
+        </div>
+
+
+        <div id="timer" class="timer team">
+            <div id="timer_title">Timer</div>
+            <div id="seconds">10 : 00</div>
+            <div id="pause" class="button">pause</div>
+            <div id="start_button" class="button b">start</div>
+            <div id="reset_timer" class="button b">reset</div>
+            <div id="s10" class="button b-alt">10</div>
+            <div id="s5" class="button b-alt">5</div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    
+    
+    </div>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="scoreBoard.js"></script>
+    <script src="timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="scoreBoard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div id="title">Score Board</div> -->
+        <div class="team" id="teamA">
+            <div id="A" class="label">A</div>
+            <div id="scoreA" class="score">0</div>
+            <input type="text" id="fieldA" class="field">
+            <!-- <div id="addA" class="button addAll">+</div> -->
+            <div id="resetA" class="button resetAll">reset</div>
+        </div>
+
+        <div class="team" id="teamB">
+            <div id="B" class="label">B</div>
+            <div id="scoreB" class="score">0</div>
+            <input type="text" id="fieldB" class="field">
+            <!-- <div id="addB" class="button addAll">+</div> -->
+            <div id="resetB" class="button resetAll">reset</div>
+        </div>
+
+        <div class="team" id="teamC">
+            <div id="C" class="label">C</div>
+            <div id="scoreC" class="score">0</div>
+            <input type="text" id="fieldC" class="field">
+            <!-- <div id="addC" class="button addAll">+</div> -->
+            <div id="resetC" class="button resetAll">reset</div>
+        </div>
+
+
+        <div id="timer" class="timer team">
+            <div id="timer_title">Timer</div>
+            <div id="seconds">10 : 00</div>
+            <div id="pause" class="button">pause</div>
+            <div id="start_button" class="button b">start</div>
+            <div id="reset_timer" class="button b">reset</div>
+            <div id="s10" class="button b-alt">10</div>
+            <div id="s5" class="button b-alt">5</div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="scoreBoard.js"></script>
+</body>
+</html>

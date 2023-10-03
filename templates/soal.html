@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>s</title>
+    <style type="text/css">
+        .points {
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.points.increase-animation {
+  transform: scale(1.2);
+}
+
+</style>
+</head>
+<body>
+<div class="game-container">
+  <div id="points" class="points">0</div>
+  <button id="increaseBtn">Increase Points</button>
+</div>
+<script type="text/javascript">
+    const pointsElement = document.getElementById('points');
+const increaseBtn = document.getElementById('increaseBtn');
+let points = 0;
+
+increaseBtn.addEventListener('click', function() {
+  points++;
+  pointsElement.textContent = points;
+  pointsElement.classList.add('points-animation');
+  
+  // Remove the animation class after a certain time
+  setTimeout(function() {
+    pointsElement.classList.remove('points-animation');
+  }, 1000);
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../lct.css" rel="stylesheet">
+    <link rel="stylesheet" href="../scoreBoard.css">
+    <title>LCT Komputer PRJ IX</title>
+    <script>
+        function close_window() {
+            close();
+        }
+    </script>
+</head>
+<body>
+    <div class="logo-kiri">
+        <img src="../logo.png">
+    </div>
+    <div class="cs_title">
+        LCT Komputer <br>
+        Semifinal Grup 3
+    </div>
+    <div class="logo-kanan">
+        <img src="../hima.png">
+        <img src="../unila.png">
+    </div>
+    <div class="container score-panel">
+        <div class="btn-home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16" onclick="close_window();return false;">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>
+        </div>
+        <div id="timer" class="timer team">
+            <div id="timer_title">Timer</div>
+            <div id="seconds">10 : 00</div>
+            <div id="pause" class="button">pause</div>
+            <div id="start_button" class="button b">start</div>
+            <div id="reset_timer" class="button b">reset</div>
+            <div id="s10" class="button b-alt">10</div>
+            <div id="s5" class="button b-alt">5</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        function reveal1(que){
+            que.innerHTML = "<h1>Co-founder sekaligus CEO Tokopedia saat ini ialah?</h1>";
+            document.getElementById('ans').innerHTML = "(Jawaban)";
+        };
+        function reveal2(ans){
+            ans.innerHTML = "<h2>William Tanuwijaya</h2>";
+        };
+    </script>
+    <div class="container q-con">
+        <div class="row q-row">
+            <div class="col-md-4 q-num">
+                F6
+            </div>
+            <div class="col-md-8 q-ques">
+                <div id = 'que' onclick = "reveal1(this)">(Pertanyaan)</div>
+                <br><div class = 'ans-container'><div id = 'ans' onclick = "reveal2(this)"></div></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Rounded switch -->
+
+    
+
+    <script src="timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
