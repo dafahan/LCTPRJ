@@ -70,15 +70,21 @@ for (let i = 0; i < 6; i++) {
                 }else if(op == 2){
                     storedScoreC -= correct;
                     scoreC.innerHTML = storedScoreC;   
+                }else if(op == 3){
+                    storedScoreD -= correct;
+                    scoreD.innerHTML = storedScoreD;   
                 }else if(op == 10){
                     storedScoreA += wrong;
                     scoreA.innerHTML = storedScoreA;
                 }else if(op == 20){
                     storedScoreB += wrong;
                     scoreB.innerHTML = storedScoreB;
-                }else {
+                }else if(op == 30){
                     storedScoreC += wrong;
                     scoreC.innerHTML = storedScoreC;   
+                }else{
+                    storedScoreD += wrong;
+                    scoreD.innerHTML = storedScoreD;   
                 }
                 turn=0;
                 
