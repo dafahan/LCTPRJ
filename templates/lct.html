@@ -433,8 +433,8 @@
         let logoKanan = document.getElementsByClassName('logo-kanan');
 
         logoKanan[0].addEventListener('click',(e)=>{
-            mode4 = true;
-            document.getElementById('teamD').style.display = 'flex';
+            mode4 = !mode4;
+            document.getElementById('teamD').style.display = (mode4? 'flex' : 'none');
         })
 
         updateLabelBorders();
