@@ -105,7 +105,9 @@ for (let i = 0; i < 6; i++) {
     
         quizC.addEventListener("click",function(e){
             event.preventDefault();
-            if((turn)%3==0){
+            if(mode4)turn%=4;
+            else turn%=3; 
+            if((turn)==0){
                 storedScoreA += correct;
                 scoreA.innerHTML = storedScoreA;
                 
@@ -113,8 +115,9 @@ for (let i = 0; i < 6; i++) {
         })
         quizW.addEventListener("click",function(e){
             event.preventDefault();
-            turn%=3;
-            if((turn)%3==0){
+            if(mode4)turn%=4;
+            else turn%=3; 
+            if((turn)==0){
                 storedScoreA -= wrong;
                 scoreA.innerHTML = storedScoreA;
                 
@@ -221,3 +224,47 @@ resetC.addEventListener("click", function () {
 
 
 }
+{// Team D
+
+    let scoreD = document.getElementById("scoreD");
+    let fieldD = document.getElementById("fieldD");
+    let addD = document.getElementById("addD");
+    let resetD = document.getElementById("resetD");
+    
+    
+            quizC.addEventListener("click",function(e){
+                if(turn==3){
+                    storedScoreD += correct;
+                    scoreD.innerHTML = storedScoreD;
+                    event.preventDefault();
+                }
+            })
+            quizW.addEventListener("click",function(e){
+                if(turn==3){
+                    storedScoreD -= wrong;
+                    scoreD.innerHTML = storedScoreD;
+                    event.preventDefault();
+                }
+            })
+        
+    fieldD.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+            if (fieldC.value == '') {
+                storedScoreD += 0;
+            } else {
+                storedScoreCD+= parseInt(fieldD.value);
+            }
+            scoreD.innerHTML = storedScoreD;
+            fieldD.value = '';
+        }
+    });
+    
+    resetD.addEventListener("click", function () {
+        storedScoreD = 0;
+        scoreD.innerHTML = storedScoreD;
+    });
+    
+    
+    
+    }
+    
