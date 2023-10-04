@@ -37,6 +37,10 @@
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
+        <div class="d-flex">
+        <div id="timer_title">Timer</div>
+            <div id="seconds" style="position: absolute; top:10%;left: 1%;">10 : 00</div>
+        </div>
         <h5 class="modal-title" id="quizModalLabel" style="font-size: 40px;"></h5>
         <a href="" data-dismiss="modal"><i class="fa fa-window-close" style="color:black;font-size: 40px;" aria-hidden="true"></i></a>
       </div>
@@ -103,6 +107,15 @@
             <!-- <div id="addC" class="button addAll">+</div> -->
             <div id="resetD" class="button resetAll">reset</div>
         </div>
+        <!-- <div id="timer" class="timer team">
+            
+            <div id="pause" class="button">pause</div>
+            <div id="start_button" class="button b">start</div>
+            <div id="reset_timer" class="button b">reset</div>
+             <div id="s20" class="button b-alt">20</div> 
+            <div id="s10" class="button b-alt">10</div>
+            <div id="s5" class="button b-alt">5</div>
+        </div> -->
     </div>
     <br>
     <br>
@@ -381,7 +394,8 @@
     <!-- <script src="canvas.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-
+<script src="{{url_for('static',filename='res/lct/timer.js')}}"></script>
+ 
     
    <script src="{{ url_for('static', filename='tictactoe.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -441,7 +455,7 @@
 
 
             blocks[i][j].addEventListener("click",function(e){
-                
+                    timerPrepare();
                     const block = document.getElementById(blocks[i][j].id);
                     blocknow = block;
                     curI = i;
@@ -598,10 +612,14 @@
 
         }
         function reveal1(que){
+                 
                  que.innerHTML = '<h1>'+question+'</h1>';
                  document.getElementById('ans').innerHTML = "(Jawaban)";
+                 timerStart();  
                              };
          function reveal2(ans){
+                          
+                            timerFinish();
                             ans.innerHTML = '<h2>'+answer+'</h2>';
                             };
     </script>
