@@ -1,3 +1,37 @@
 question_id,question,answer
-a1,Siapa penemu lampu pijar?,Thomas Edison
-a2,Apa nama ilmuwan yang menemukan relativitas umum?,Albert Einstein
+a1,"Siapa penulis novel ""1984""?",George Orwell
+a2,Apa nama alat musik gesek yang terkenal?,Biola
+a3,Apa nama ilmuwan yang menemukan hukum gerak planet?,Johannes Kepler
+a4,"Apa nama benua yang dijuluki ""Benua Es""?",Antartika
+a5,Siapa ilmuwan yang menemukan radioaktivitas?,Marie Curie
+a6,"Siapa penulis drama ""Romeo dan Juliet""?",William Shakespeare
+b1,Apa nama ilmuwan yang menemukan hukum gravitasi?,Isaac Newton
+b2,Apa nama sungai terpanjang di dunia?,Sungai Nil
+b3,Apa nama alat yang digunakan untuk mengukur waktu?,Jam
+b4,Apa nama alat yang digunakan untuk mengukur temperatur?,Termometer
+b5,"Siapa penulis drama tragedi terkenal ""Romeo dan Juliet""?",William Shakespeare
+b6,Apa nama alat yang digunakan untuk mengukur kecepatan angin?,Anemometer
+c1,Siapa penemu lampu pijar?,Thomas Edison
+c2,Apa nama planet terdekat dari Matahari?,Merkurius
+c3,Siapa penemu telepon?,Alexander Graham Bell
+c4,Apa nama alat transportasi yang terbang di udara?,Pesawat terbang
+c5,Apa nama alat yang digunakan untuk mengukur jarak?,Meter
+c6,Apa ibu kota Prancis?,Paris
+d1,"Siapa pelukis terkenal yang melukis ""Mona Lisa""?",Leonardo da Vinci
+d2,Apa nama ilmuwan yang menemukan relativitas umum?,Albert Einstein
+d3,Apa nama ilmuwan yang menemukan teori relativitas khusus?,Albert Einstein
+d4,Apa nama ilmuwan yang menemukan teori gravitasi?,Isaac Newton
+d5,Siapa ilmuwan yang menemukan struktur DNA?,James Watson dan Francis Crick
+d6,Siapa presiden pertama Amerika Serikat?,George Washington
+e1,Apa nama ilmuwan yang menemukan hukum termodinamika?,James Clerk Maxwell
+e2,Apa nama planet terbesar di tata surya?,Yupiter
+e3,"Siapa pelukis terkenal yang melukis ""Starry Night""?",Vincent van Gogh
+e4,Apa nama benua terbesar di dunia?,Asia
+e5,"Siapa penulis novel ""To Kill a Mockingbird""?",Harper Lee
+e6,Siapa penemu komputer pertama?,Charles Babbage
+f1,"Siapa penulis ""The Great Gatsby""?",F. Scott Fitzgerald
+f2,Apa nama ibu kota Jepang?,Tokyo
+f3,Siapa presiden Amerika Serikat yang memerintah selama Perang Saudara?,Abraham Lincoln
+f4,"Siapa penulis novel ""Harry Potter""?",J.K. Rowling
+f5,Siapa pencipta teori evolusi?,Charles Darwin
+f6,Apa nama alat yang digunakan untuk mengukur tekanan udara?,Barometer
