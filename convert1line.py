@@ -1,16 +1,18 @@
 pseudocode = """
 START pseudocode
 
-SET num = 1234
-SET x= 0
+SET n =7
+SET fibonacci1 = 1
+SET fibonacci2 = 2
 
-WHILE num > 0
-    SET digit = num % 10
-    SET x= (x * 10) + digit
-    SET num = num / 10
-ENDWHILE
+DISPLAY fibonacci1
 
-DISPLAY x
+FOR i = 2 TO n
+    SET fibonacci = fibonacci1 + fibonacci2
+    DISPLAY fibonacci
+    SET fibonacci1 = fibonacci2
+    SET fibonacci2 = fibonacci
+ENDFOR
 
 END pseudocode
 """
