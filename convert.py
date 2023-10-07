@@ -5,8 +5,8 @@ import string
 # Create a list of all possible question_id combinations from "a1" to "f6"
 all_question_ids = [f"{letter}{number}" for letter in 'abcdef' for number in range(1, 7)]
 
-# Read the data from template.csv
-df = pd.read_csv('template.csv')
+# Read the data from template.csv with a semicolon separator
+df = pd.read_csv('template.csv', sep=";")
 
 # Check if the number of rows matches the number of possible question_id combinations
 if len(df) != len(all_question_ids):
@@ -21,18 +21,18 @@ df['question_id'] = all_question_ids
 # Reorder the columns
 df = df[['question_id', 'question', 'answer']]
 
-# Write the randomized data to a new CSV file
-df.to_csv('soal.csv', index=False)
+# Write the randomized data to a new CSV file with a semicolon separator
+df.to_csv('soal.csv', index=False, sep=";")
 
 print("Data has been randomized with unique IDs and saved to soal.csv")
 
-# Read the data from soal.csv
-df = pd.read_csv('soal.csv')
+# Read the data from soal.csv with a semicolon separator
+df = pd.read_csv('soal.csv', sep=";")
 
 # Sort the data by question_id in ascending order
 df = df.sort_values(by='question_id')
 
-# Write the sorted data to a new CSV file
-df.to_csv('soal_sorted.csv', index=False)
+# Write the sorted data to a new CSV file with a semicolon separator
+df.to_csv('soal_sorted.csv', index=False, sep=";")
 
 print("Data has been sorted and saved to soal_sorted.csv")
