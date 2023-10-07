@@ -36,10 +36,10 @@
     <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex">
+      <div class="modal-header" >
+        <div class="d-flex" >
         <div id="timer_title">Timer</div>
-            <div id="seconds" style="position: absolute; top:10%;left: 1%;">10 : 00</div>
+            <div id="seconds" >10 : 00</div>
         </div>
         <h5 class="modal-title" id="quizModalLabel" style="font-size: 40px;"></h5>
         <a href="" data-dismiss="modal" onclick="closeSoal();"><i class="fa fa-window-close" style="color:black;font-size: 40px;" aria-hidden="true"></i></a>
@@ -57,6 +57,9 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-danger modalbtn" id="wrongBtn"  data-dismiss="modal" value="false">Wrong</button>
         <button type="button" class="btn btn-success modalbtn" id="correctBtn"  data-dismiss="modal" value="true">Correct</button>
+      
+        <button type="button" class="btn btn-danger modalbtn" id="wrongBtn"  data-dismiss="modal" value="false"><i class="fa fa-arrow-left"></i></button>
+        <button type="button" class="btn btn-success modalbtn" id="correctBtn"  data-dismiss="modal" value="true"><i class="fa fa-arrow-right"></i></button>
       </div>
     </div>
   </div>
@@ -120,7 +123,11 @@
     <br>
     <br>
     <br>
-
+    <div class="fluid-container">
+      <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
+        A1
+    </button>
+    </div>
     
     <br>
    
