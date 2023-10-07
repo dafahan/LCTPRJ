@@ -18,7 +18,7 @@ c4,Apa nama alat transportasi yang terbang di udara?,Pesawat terbang
 c5,Apa nama alat yang digunakan untuk mengukur jarak?,Meter
 c6,Apa ibu kota Prancis?,Paris
 d1,"Siapa pelukis terkenal yang melukis ""Mona Lisa""?",Leonardo da Vinci
-d2,Apa nama ilmuwan yang menemukan relativitas umum?,Albert Einstein
+d2,START pseudocode<br><br>SET num = 1234<br>SET x= 0<br><br>WHILE num > 0<br>    SET digit = num % 10<br>    SET x= (x * 10) + digit<br>    SET num = num / 10<br>ENDWHILE<br><br>DISPLAY x<br><br>END pseudocode,4321 
 d3,Apa nama ilmuwan yang menemukan teori relativitas khusus?,Albert Einstein
 d4,Apa nama ilmuwan yang menemukan teori gravitasi?,Isaac Newton
 d5,Siapa ilmuwan yang menemukan struktur DNA?,James Watson dan Francis Crick

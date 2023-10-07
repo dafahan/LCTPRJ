@@ -1,6 +1,6 @@
 question;answer
-START pseudocode<br><br>SET a = 5<br><br>SET b = 2<br>a = a + b<br>b = a - b<br>a = a - b<br>DISPLAY a, b<br>END pseudocode<br>; 2 5 
-Apa nama ilmuwan yang menemukan relativitas umum?;Albert Einstein
+"START pseudocode<br><br>SET a = 5<br><br>SET b = 2<br>a = a + b<br>b = a - b<br>a = a - b<br>DISPLAY a, b<br>END pseudocode<br>"; 2 5 
+START pseudocode<br><br>SET num = 1234<br>SET x= 0<br><br>WHILE num > 0<br>    SET digit = num % 10<br>    SET x= (x * 10) + digit<br>    SET num = num / 10<br>ENDWHILE<br><br>DISPLAY x<br><br>END pseudocode;4321 
 Apa nama ilmuwan yang menemukan teori gravitasi?;Isaac Newton
 Siapa presiden pertama Amerika Serikat?;George Washington
 Apa nama planet terdekat dari Matahari?;Merkurius

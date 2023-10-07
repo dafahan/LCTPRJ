@@ -20,14 +20,14 @@
     }
     
     .question{
-        font-size: 30px;
+        font-size: 25px;
         height: 100%;
     }
     .question>div>h1{
-        font-size: 40px;
+        font-size: 35px;
     }
     .question>div>div>h2{
-        font-size: 35px;
+        font-size: 30px;
         
     }
   </style>
@@ -42,11 +42,11 @@
             <div id="seconds" style="position: absolute; top:10%;left: 1%;">10 : 00</div>
         </div>
         <h5 class="modal-title" id="quizModalLabel" style="font-size: 40px;"></h5>
-        <a href="" data-dismiss="modal"><i class="fa fa-window-close" style="color:black;font-size: 40px;" aria-hidden="true"></i></a>
+        <a href="" data-dismiss="modal" onclick="closeSoal();"><i class="fa fa-window-close" style="color:black;font-size: 40px;" aria-hidden="true"></i></a>
       </div>
               <div class="modal-body">
           <div class="question d-flex justify-content-center align-items-center flex-column" >
-            <div id="que mt-3"onclick="reveal1(this)">Pertanyaan</div>
+            <div id="que"onclick="reveal1(this)">Pertanyaan</div>
             <br>
             <div class="ans">
               <div id="ans" class="ans-box" onclick="reveal2(this)"></div>
@@ -402,7 +402,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        
+        let boxQue = document.getElementById('que');
+        let boxAns = document.getElementById('ans');
         let labelA = document.getElementById('A');
         let labelB = document.getElementById('B');
         let labelC = document.getElementById('C');
@@ -494,13 +495,13 @@
                 console.log(matrix[curI][curJ]);
                 updateLabelBorders();
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
-                 que.innerHTML = 'Pertanyaan';
-                 ans.innerHTML = '';
+                 
                  turn = turn+1;
                  if(mode4)turn%=4;
                 else turn%=3;
                 updateLabelBorders();
                 console.log(turn);
+                closeSoal();
         })
         quizC.addEventListener("click",function(e){
            
@@ -522,14 +523,14 @@
                  matrix[curI][curJ] = 3;
                 console.log(matrix[curI][curJ]);
             }
-                que.innerHTML = 'Pertanyaan';
-                ans.innerHTML = '';
+                
             // Check if any row has the same value in all elements
 
              turn = turn+1;
              if(mode4)turn%=4;
                 else turn%=3;
             updateLabelBorders();
+            closeSoal();
         })
         function updateLabelBorders() {
              tmpA = 0;
@@ -623,6 +624,10 @@
                             timerFinish();
                             ans.innerHTML = '<h2>'+answer+'</h2>';
                             };
+        function closeSoal(){
+            boxQue.innerHTML = 'Pertanyaan';
+                boxAns.innerHTML = '';
+        }
     </script>
 <script type="text/javascript">
  

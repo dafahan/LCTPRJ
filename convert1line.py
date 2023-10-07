@@ -1,13 +1,17 @@
 pseudocode = """
 START pseudocode
 
-SET a = 5
+SET num = 1234
+SET x= 0
 
-SET b = 2
-a = a + b
-b = a - b
-a = a - b
-DISPLAY a, b
+WHILE num > 0
+    SET digit = num % 10
+    SET x= (x * 10) + digit
+    SET num = num / 10
+ENDWHILE
+
+DISPLAY x
+
 END pseudocode
 """
 
