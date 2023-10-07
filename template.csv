@@ -1,0 +1,37 @@
+question;answer
+"START pseudocode<br><br>SET a = 5<br><br>SET b = 2<br>a = a + b<br>b = a - b<br>a = a - b<br>DISPLAY a, b<br>END pseudocode<br>"; 2 5 
+START pseudocode<br><br>SET num = 1234<br>SET x= 0<br><br>WHILE num > 0<br>    SET digit = num % 10<br>    SET x= (x * 10) + digit<br>    SET num = num / 10<br>ENDWHILE<br><br>DISPLAY x<br><br>END pseudocode;4321 
+Apa nama ilmuwan yang menemukan teori gravitasi?;Isaac Newton
+Siapa presiden pertama Amerika Serikat?;George Washington
+Apa nama planet terdekat dari Matahari?;Merkurius
+Apa ibu kota Prancis?;Paris
+Apa nama ibu kota Jepang?;Tokyo
+Siapa penulis novel "Harry Potter"?;J.K. Rowling
+Apa nama alat yang digunakan untuk mengukur waktu?;Jam
+Siapa penulis drama tragedi terkenal "Romeo dan Juliet"?;William Shakespeare
+Apa nama benua terbesar di dunia?;Asia
+Siapa pelukis terkenal yang melukis "Mona Lisa"?;Leonardo da Vinci
+Apa nama sungai terpanjang di dunia?;Sungai Nil
+Apa nama alat musik gesek yang terkenal?;Biola
+Siapa pencipta teori evolusi?;Charles Darwin
+Apa nama alat transportasi yang terbang di udara?;Pesawat terbang
+Siapa ilmuwan yang menemukan radioaktivitas?;Marie Curie
+Apa nama alat yang digunakan untuk mengukur temperatur?;Termometer
+Siapa penemu komputer pertama?;Charles Babbage
+Apa nama alat yang digunakan untuk mengukur jarak?;Meter
+Siapa presiden Amerika Serikat yang memerintah selama Perang Saudara?;Abraham Lincoln
+Apa nama ilmuwan yang menemukan hukum gravitasi?;Isaac Newton
+Siapa penulis novel "To Kill a Mockingbird"?;Harper Lee
+Apa nama planet terbesar di tata surya?;Yupiter
+Apa nama ilmuwan yang menemukan teori relativitas khusus?;Albert Einstein
+Siapa penulis "The Great Gatsby"?;F. Scott Fitzgerald
+Apa nama ilmuwan yang menemukan hukum gerak planet?;Johannes Kepler
+Siapa pelukis terkenal yang melukis "Starry Night"?;Vincent van Gogh
+Apa nama alat yang digunakan untuk mengukur tekanan udara?;Barometer
+Siapa penemu telepon?;Alexander Graham Bell
+Apa nama benua yang dijuluki "Benua Es"?;Antartika
+Siapa penulis drama "Romeo dan Juliet"?;William Shakespeare
+Apa nama ilmuwan yang menemukan hukum termodinamika?;James Clerk Maxwell
+Siapa ilmuwan yang menemukan struktur DNA?;James Watson dan Francis Crick
+Apa nama alat yang digunakan untuk mengukur kecepatan angin?;Anemometer
+Siapa penulis novel "1984"?;George Orwell
