@@ -11,7 +11,7 @@ b3,Apa nama alat yang digunakan untuk mengukur waktu?,Jam
 b4,Apa nama alat yang digunakan untuk mengukur temperatur?,Termometer
 b5,"Siapa penulis drama tragedi terkenal ""Romeo dan Juliet""?",William Shakespeare
 b6,Apa nama alat yang digunakan untuk mengukur kecepatan angin?,Anemometer
-c1,Siapa penemu lampu pijar?,Thomas Edison
+c1,"START pseudocode<br><br>SET a = 5<br><br>SET b = 2<br>a = a + b<br>b = a - b<br>a = a - b<br>DISPLAY a, b<br>END pseudocode<br>", 2 5 
 c2,Apa nama planet terdekat dari Matahari?,Merkurius
 c3,Siapa penemu telepon?,Alexander Graham Bell
 c4,Apa nama alat transportasi yang terbang di udara?,Pesawat terbang

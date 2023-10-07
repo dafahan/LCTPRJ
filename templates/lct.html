@@ -45,9 +45,9 @@
         <a href="" data-dismiss="modal"><i class="fa fa-window-close" style="color:black;font-size: 40px;" aria-hidden="true"></i></a>
       </div>
               <div class="modal-body">
-          <div class="question">
-            <div id="que" onclick="reveal1(this)">Pertanyaan</div>
-            <br><br><br>
+          <div class="question d-flex justify-content-center align-items-center flex-column" >
+            <div id="que mt-3"onclick="reveal1(this)">Pertanyaan</div>
+            <br>
             <div class="ans">
               <div id="ans" class="ans-box" onclick="reveal2(this)"></div>
             </div>
@@ -614,6 +614,7 @@
         function reveal1(que){
                  
                  que.innerHTML = '<h1>'+question+'</h1>';
+                 console.log(question);
                  document.getElementById('ans').innerHTML = "(Jawaban)";
                  timerStart();  
                              };

@@ -33,6 +33,15 @@ df = pd.read_csv('soal.csv', sep=";")
 df = df.sort_values(by='question_id')
 
 # Write the sorted data to a new CSV file with a semicolon separator
-df.to_csv('soal_sorted.csv', index=False, sep=";")
+df.to_csv('soal.csv', index=False, sep=";")
+
+print("Data has been sorted and saved to soal_sorted.csv")
+
+
+# Sort the data by question_id in ascending order
+df = df.sort_values(by='question_id')
+
+# Write the sorted data to a new CSV file
+df.to_csv('soal.csv', index=False)
 
 print("Data has been sorted and saved to soal_sorted.csv")
