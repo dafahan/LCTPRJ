@@ -1,24 +1,34 @@
-question_id;question;answer
+id;question;answer
 a1;Suatu badan yang bertanggung jawab dalam membuat standarisasi dan aturan bahasa HTML adalah?;W3C
 a2;Serangan pada jaringan komputer dilakukan secara bersamaan dari beberapa sumber untuk menghancurkan target?;DDoS (Distributed Denial of Service)
 a3;Berapa banyak susunan berbeda yang dapat dibentuk dari abjad-abjad pada kata JUARAPRJ?;5040
-a4;START pseudocode<br><br>SET a = 5<br><br>SET b = 2<br>a = a + b<br>b = a - b<br>a = a - b<br>DISPLAY a, b<br>END pseudocode<br><br>Apakah output dari a5;pseudocode di atas?;2 5 (benar)
-a6;Komponen Sistem Operasi untuk sistem I/O yang berfungsi menampung sementara data dari/ke perangkat I/O disebut?;Buffer
+a4;START pseudocode<br><br>SET a = 5<br><br>SET b = 2<br>a = a + b<br>b = a - b<br>a = a - b<br>DISPLAY a, b<br>END pseudocode<br><br>Apakah output dari pseudocode di atas?;2 5 (benar)
+a5;Komponen Sistem Operasi untuk sistem I/O yang berfungsi menampung sementara data dari/ke perangkat I/O disebut?;Buffer
 b1;Microsoft Word Yang Pertama Kali Menggunakan Ribbon Interface Adalah?;2007
-b2;Selain bahasa pemrograman Common Business-Oriented Language (COBOL) bahasa pemrograman apa yang digunakan pada komputer generasi kedua?;Formula Translator b3;(FORTRAN) 
-b4;Arti dari perintah #chmod 0755 adalah?;Memberikan hak akses read and write kepada user 
-b5;Hasil dari 2023 mod (25 - 13 + 3) adalah?;8
-b6;DEKLARASI<br>n : integer<br>isPrime : boolean<br><br>DESKRIPSI<br>n ← 17<br>isPrime ← true<br>for i ← 2 to n/2 do<br>if n mod i = 0 then<br>isPrime ← false<br>break<br>endif<br>endfor<br>write(isPrime)<br>Apakah output dari pseudocode di atas?;True
+b2;Selain bahasa pemrograman Common Business-Oriented Language (COBOL) bahasa pemrograman apa yang digunakan pada komputer generasi kedua?;Formula Translator (FORTRAN) 
+b3;Arti dari perintah #chmod 0755 adalah?;Memberikan hak akses read and write kepada user 
+b4;Hasil dari 2023 mod (25 - 13 + 3) adalah?;8
+b5;DEKLARASI<br>n : integer<br>isPrime : boolean<br><br>DESKRIPSI<br>n ← 17<br>isPrime ← true<br>for i ← 2 to n/2 do<br>if n mod i = 0 then<br>isPrime ← false<br>break<br>endif<br>endfor<br>write(isPrime)<br>Apakah output dari pseudocode di atas?;True
 c1;Urutan posisi warna kabel straight through yang benar adalah?;putih orange – orange – putih hijau –  biru – putih biru –  hijau – putih coklat – coklat
 c2;Software yang bersifat paten dan tidak dapat dilakukan modifikasi atau dikembangkan walaupun ada masalah dalam fungsinya disebut?;Firmware
-c3;START pseudocode<br><br>SET n =7<br>SET fibonacci1 = 1<br>SET fibonacci2 = 2<br><br>DISPLAY fibonacci1<br><br>FOR i = 2 TO n<br>    SET fibonacci = c4;fibonacci1 + fibonacci2<br>    DISPLAY fibonacci<br>    SET fibonacci1 = fibonacci2<br>    SET fibonacci2 = fibonacci<br>ENDFOR<br><br>END pseudocode<br><br>Apakah output dari pseudocode diatas?;1 3 5 8 13 21 34
-c5;Diketahui bilangan biner 10101010(2). Jika di konversi ke desimal, nilainya adalah?;170
-c6;Pada Tahun Berapa Microsoft Office Memperkenalkan Format File .Xlsx Untuk Aplikasi Pengolah Angka?;2007
+c3;START pseudocode<br><br>SET n =7<br>SET fibonacci1 = 1<br>SET fibonacci2 = 2<br><br>DISPLAY fibonacci1<br><br>FOR i = 2 TO n<br>    SET fibonacci = fibonacci1 + fibonacci2<br>    DISPLAY fibonacci<br>    SET fibonacci1 = fibonacci2<br>    SET fibonacci2 = fibonacci<br>ENDFOR<br><br>END pseudocode<br><br>Apakah output dari pseudocode diatas?;1 3 5 8 13 21 34
+c4;Diketahui bilangan biner 10101010(2). Jika di konversi ke desimal, nilainya adalah?;170
+c5;Pada Tahun Berapa Microsoft Office Memperkenalkan Format File .Xlsx Untuk Aplikasi Pengolah Angka?;2007
 d1;DEKLARASI<br>a : integer<br>b : integer<br>n : integer<br><br>DESKRIPSI<br>a ← 8<br>b ← 5<br>input(n)<br>while a < n do<br>a ← a + b<br>b ← b + 1<br>endwhile<br>write(a, “ “, b)<br>Jika input yang diberikan adalah 4, maka output dari program diatas adalah?;a=8, b=5
 d2;Sebutkan 3 kategori komputer berdasarkan jenis data yang diolah?;Komputer Analog, Komputer Digital dan Komputer Hybrid
 d3;Diketahui bilangan heksadesimal A5(16). Jika dikonversi ke bilangan oktal, nilainya adalah?;245
 d4;Kapasitas maksimal jalur komunikasi untuk melakukan proses pengiriman dan penerimaan data dalam satuan waktu tertentu adalah?;Bandwidth
 d5;Port yang digunakan untuk menghubungkan kartu grafis ( VGA) dengan motherboard adalah?;PCI
+e1;Perangkat Komputer yang digunakan sebagai tempat untuk memasang atau meletakkan seluruh rangkaian sistem komputer disebut?;Motherboard
+e2;Berapa angka desimal yang mewakili warna putih?;255
+e3;Shortcut CTRL+E di dalam MS.Word digunakan untuk?;Paragraf Center
+e4;Langkah terakhir pada saat kita mematikan komputer dengan sistem windows 98 adalah?;Shut Down
+e5;Diketahui (f o g)( x) = 2x + 4 dan f(x) = x – 2. Tentukan fungsi g (x)!;g(x) = 2x + 6
+e6;Perangkat lunak komputer CAD yang digunakan untuk menggambar 2 dimensi dan 3 dimensi yang dikembangkan oleh Autodesk?;AutoCAD
+e7;Fungsi dari $ top dalam operasi linux adalah?;Untuk melihat semua proses yang berjalan dalam Linux
+e8;Shortcut CTRL+H dalam MS.Office digunakan untuk?;Mengganti sebagian teks (Replace)
+e9;Tipe RAM card yang frekuensi maksimalnya 1600 MHz adalah?;DDR3 (Double Data Rate 3)
+e10;Satuan dari 4 bit data disebut dengan?;Nibble
 f1;Apa istilah yang digunakan untuk menggambarkan jumlah total bit yang dapat ditransmisikan dalam suatu saluran komunikasi dalam waktu tertentu?;Throughput
 f2;Layer yang bertanggung jawab atas pembentukan koneksi, pemeliharaan sesi, otentikasi, dan juga memastikan keamanan adalah?;Session Layer
 f3;Dari 5 orang kurir yang bekerja di jakarta akan dipilih 3 orang untuk mengirim paket ke wilayah jakarta pusat. Ada berapa cara memilih kurir tersebut?;3003

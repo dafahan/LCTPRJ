@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     <link rel="stylesheet" href="{{url_for('static', filename='res/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='soal.css') }}?v=1">
+ <link rel="stylesheet" href="{{ url_for('static', filename='soal.css') }}?v=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='scoreBoard.css') }}?v=1">
     <title>LCT Komputer PRJ IX</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,83 +53,91 @@
       </div>
               <div class="modal-body">
           <div class="question d-flex justify-content-center align-items-center flex-column" >
-            <div id="que mt-3"onclick="reveal1(this)">Pertanyaan</div>
+            <div id="que"onclick="reveal1()">Pertanyaan</div>
             <br>
             <div class="ans">
-              <div id="ans" class="ans-box" onclick="reveal2(this)"></div>
+              <div id="ans" class="ans-box" onclick="reveal2()"></div>
             </div>
           </div>
         </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger modalbtn" id="wrongBtn"  data-dismiss="modal" value="false">Wrong</button>
-        <button type="button" class="btn btn-success modalbtn" id="correctBtn"  data-dismiss="modal" value="true">Correct</button>
-      
-        <button type="button" class="btn btn-danger modalbtn" id="wrongBtn"  data-dismiss="modal" value="false"><i class="fa fa-arrow-left"></i></button>
-        <button type="button" class="btn btn-success modalbtn" id="correctBtn"  data-dismiss="modal" value="true"><i class="fa fa-arrow-right"></i></button>
+        <div class="boxREBUTAN" id="boxREBUTAN">
+          <button type="button" class="btn modalbtn rebutanbtn" id="btnA"   value="false" style="background: red;font-weight: bold;">A</button>
+          <button type="button" class="btn  modalbtn rebutanbtn" id="btnB"   value="true" style="background:blue;font-weight: bold;">B</button>
+          <button type="button" class="btn  modalbtn rebutanbtn" id="btnC"   value="true" style="background:yellow;font-weight: bold;">C</button>
+          <button type="button" class="btn  modalbtn rebutanbtn" id="rebutanD"   value="true" style="background:green;font-weight: bold;display: none;">D</button><button type="button" class="btn btn-success modalbtn" id="next"   value="false"><i class="fa fa-arrow-right"></i></button>
+                    
+        </div>
+        <div id="boxCW" style="display: none;">
+        <button type="button" class="btn btn-danger modalbtn" id="wrongBtn"   value="false">Wrong</button>
+        <button type="button" class="btn btn-success modalbtn" id="correctBtn"   value="true">Correct</button>
       </div>
+      
+     </div>
     </div>
   </div>
 </div>
-    <div class="logo-kiri">
-        <img src="{{ url_for('static', filename='res/lct/logo.png') }}">
-    </div>
-    <div class="cs_title" contenteditable="true" spellcheck="false">
-        LCT Komputer <br>
-        Semifinal Grup 1
-    </div>
-    <div class="logo-kanan">
-        <img src="{{ url_for('static', filename='res/lct/unila.png') }}">
-        <img src="{{ url_for('static', filename='res/lct/hima.png') }}">
-        
-    </div>
+<div class="logo-kiri">
+  <img src="{{ url_for('static', filename='res/lct/logo.png') }}">
+</div>
+<div class="cs_title" contenteditable="true" spellcheck="false">
+  LCT Komputer <br>
+  Semifinal Grup 1
+</div>
+<div class="logo-kanan">
+  <img src="{{ url_for('static', filename='res/lct/unila.png') }}">
+  <img src="{{ url_for('static', filename='res/lct/hima.png') }}">
+  
+</div>
 
-    <div class="container score-panel" style="padding-bottom: 5px;">
-        <!-- <div id="title">Score Board</div> -->
-        <div class="team" id="teamA">
-            <div id="A" class="label" style="border:solid black 1px;">A</div>
-            <div id="scoreA" class="score">0</div>
-            <input type="text" id="fieldA" class="field">
-            <!-- <div id="addA" class="button addAll">+</div> -->
-            <div id="resetA" class="button resetAll">reset</div>
-        </div>
+<div class="container score-panel" style="padding-bottom: 5px;">
+  <!-- <div id="title">Score Board</div> -->
+  <div class="team" id="teamA">
+      <div id="A" class="label" style="border:solid black 1px;">A</div>
+      <div id="scoreA" class="score">0</div>
+      <input type="text" id="fieldA" class="field">
+      <!-- <div id="addA" class="button addAll">+</div> -->
+      <div id="resetA" class="button resetAll">reset</div>
+  </div>
 
-        <div class="team" id="teamB">
-            <div id="B" class="label">B</div>
-            <div id="scoreB" class="score">0</div>
-            <input type="text" id="fieldB" class="field">
-            <!-- <div id="addB" class="button addAll">+</div> -->
-            <div id="resetB" class="button resetAll">reset</div>
-        </div>
+  <div class="team" id="teamB">
+      <div id="B" class="label">B</div>
+      <div id="scoreB" class="score">0</div>
+      <input type="text" id="fieldB" class="field">
+      <!-- <div id="addB" class="button addAll">+</div> -->
+      <div id="resetB" class="button resetAll">reset</div>
+  </div>
 
-        <div class="team" id="teamC">
-            <div id="C" class="label">C</div>
-            <div id="scoreC" class="score">0</div>
-            <input type="text" id="fieldC" class="field">
-            <!-- <div id="addC" class="button addAll">+</div> -->
-            <div id="resetC" class="button resetAll">reset</div>
-        </div>
+  <div class="team" id="teamC">
+      <div id="C" class="label">C</div>
+      <div id="scoreC" class="score">0</div>
+      <input type="text" id="fieldC" class="field">
+      <!-- <div id="addC" class="button addAll">+</div> -->
+      <div id="resetC" class="button resetAll">reset</div>
+  </div>
 
-        <div class="team" id="teamD" style="display: none;">
-            <div id="D" class="label">D</div>
-            <div id="scoreD" class="score">0</div>
-            <input type="text" id="fieldD" class="field">
-            <!-- <div id="addC" class="button addAll">+</div> -->
-            <div id="resetD" class="button resetAll">reset</div>
-        </div>
-        <!-- <div id="timer" class="timer team">
-            
-            <div id="pause" class="button">pause</div>
-            <div id="start_button" class="button b">start</div>
-            <div id="reset_timer" class="button b">reset</div>
-             <div id="s20" class="button b-alt">20</div> 
-            <div id="s10" class="button b-alt">10</div>
-            <div id="s5" class="button b-alt">5</div>
-        </div> -->
-    </div>
-    <br>
-    <br>
-    <br>
+  <div class="team" id="teamD" style="display: none;">
+      <div id="D" class="label">D</div>
+      <div id="scoreD" class="score">0</div>
+      <input type="text" id="fieldD" class="field">
+      <!-- <div id="addC" class="button addAll">+</div> -->
+      <div id="resetD" class="button resetAll">reset</div>
+  </div>
+  <!-- <div id="timer" class="timer team">
+      
+      <div id="pause" class="button">pause</div>
+      <div id="start_button" class="button b">start</div>
+      <div id="reset_timer" class="button b">reset</div>
+       <div id="s20" class="button b-alt">20</div> 
+      <div id="s10" class="button b-alt">10</div>
+      <div id="s5" class="button b-alt">5</div>
+  </div> -->
+</div>
+<br>
+<br>
+<br>
+
     <div class="container-soal container d-flex justify-content-center align-items-center flex-column">
       <div class="sesi soal-paket d-flex flex-row">
         <div class="paket"><a  class="block" id = 'a' target="_blank">
@@ -139,19 +146,19 @@
           </button>
         </a>
      </div>
-      <div class="paket"><a  class="block" id = 'a' target="_blank">
+      <div class="paket"><a  class="block" id = 'b' target="_blank">
         <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
             B
         </button>
       </a>
   </div>
-    <div class="paket"><a  class="block" id = 'a' target="_blank">
+    <div class="paket"><a  class="block" id = 'c' target="_blank">
       <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
           C
       </button>
     </a>
   </div>
-  <div class="paket"><a  class="block" id = 'a' target="_blank">
+  <div class="paket"><a  class="block" id = 'd' target="_blank">
     <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
         D
     </button>
@@ -160,7 +167,7 @@
       </div>
       <div class="sesi soal-lelang" >
        
-        <a  class="block" id = 'a1' target="_blank" style="width: 100%;">
+        <a  class="block" id = 'e' target="_blank" style="width: 100%;">
           <button class="btn-custom1" data-toggle="modal" data-target="#quizModal">
             REBUTAN
           </button>
@@ -168,7 +175,7 @@
       </div>
     
       <div class="sesi soal-rebutan" >
-        <a  class="block" id = 'a1' target="_blank" style="width: 100%;">
+        <a  class="block" id = 'f' target="_blank" style="width: 100%;">
           <button class="btn-custom1" data-toggle="modal" data-target="#quizModal">
               LELANG
           </button>
@@ -182,18 +189,20 @@
     
 	<!-- <canvas id="canvas"></canvas> -->
     <!-- <script src="canvas.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-<script src="{{url_for('static',filename='res/lct/timer.js')}}"></script>
- 
-    
-   <script src="{{ url_for('static', filename='tictactoe.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        let boxQue = document.getElementById('que');
-        let boxAns = document.getElementById('ans');
+<script src="{{url_for('static', filename='res/lct/timer.js')}}"></script>
+<script src="{{ url_for('static', filename='tictactoe1.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    let next = document.getElementById('next');
+   
+      wrong = 0;
+        let kode = '';
+        let que = document.getElementById('que');
+        let ans = document.getElementById('ans');
+        let cntSesi = 0;
         let labelA = document.getElementById('A');
         let labelB = document.getElementById('B');
         let labelC = document.getElementById('C');
@@ -222,10 +231,20 @@
         }
         let logoKiri = document.getElementsByClassName('logo-kiri');
         let logoKanan = document.getElementsByClassName('logo-kanan');
-
+        let btnRebut = document.getElementsByClassName('rebutanbtn');
+        for(let i =0 ;i<btnRebut.length;i++){
+          btnRebut[i].addEventListener("dblclick",()=>{
+            btnRebut[i].style.background = 'black';
+          });
+          btnRebut[i].addEventListener('click',()=>{
+            btnRebut[i].style.background = 'none';
+          });
+          
+        }
         logoKanan[0].addEventListener('click',(e)=>{
             mode4 = !mode4;
             document.getElementById('teamD').style.display = (mode4? 'flex' : 'none');
+            document.getElementById('rebutanD').style.display = (mode4? 'inline-flex' : 'none');
         })
 
         updateLabelBorders();
@@ -240,23 +259,25 @@
         const soal = document.getElementsByClassName('btn-custom');
         let question = '';
         let answer = '';
+        let kodeSoal = '';
+        let turnSoal = 1;
+        for(let i=0; i<blocks.length; i++){
           
-        for (let i = 0; i < 6; i++) {
-            for(let j = 0; j<6; j++){
+          blocks[i].addEventListener('click',(e)=>{
+            blocknow = blocks[i];
+            
+                blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
+             
+            turnSoal = 1;
+            quizC.removeAttribute("data-dismiss");
+            quizW.removeAttribute("data-dismiss");
 
-
-            blocks[i][j].addEventListener("click",function(e){
-                    timerPrepare();
-                    const block = document.getElementById(blocks[i][j].id);
-                    blocknow = block;
-                    curI = i;
-                    curJ = j;
-                    let titleSoal = document.getElementsByClassName('modal-title')[0]
-
-                    
-                    const kodeSoal = blocks[i][j].id;
-                    console.log(kodeSoal);
-                    titleSoal.innerHTML = kodeSoal.toUpperCase();
+            cntSesi+=1;
+            let titleSoal = document.getElementsByClassName('modal-title')[0]
+            kode = blocks[i].id;
+            kodeSoal = ""+kode+turnSoal;
+            console.log(kodeSoal);
+            titleSoal.innerHTML = kodeSoal.toUpperCase();
                     const xhr = new XMLHttpRequest();
                     const url = '/getsoal?kodeSoal=' + kodeSoal;
                     xhr.open('GET', url);
@@ -272,93 +293,180 @@
                         }
                     };
                     xhr.send();
-                   
-            })
-            }
+              
+          })
         }
+                    
+                    
+
+
         quizW.addEventListener("click",function(e){
-                
-                if(turn == 0)matrix[curI][curJ] = 10;
-                else if(turn == 1)matrix[curI][curJ]=20;
-                else if(turn == 2)matrix[curI][curJ]=30;
-                else matrix[curI][curJ]=40;
-                console.log(matrix[curI][curJ]);
+         
+          closeSoal();
+          timerPrepare();
+            if(sesi==1){
+              turnSoal++;
+              if(turnSoal>5){ 
+                if(mode4){
+                  if(cntSesi==4){
+                    sesi+=1;
+                }
+              }else{
+                if(cntSesi==3){
+                  sesi+=1;
+                }
+              }
+                quizW.setAttribute("data-dismiss", "modal");
+                turn+=1;
+                return;
+              }
+            }
+            
+            let titleSoal = document.getElementsByClassName('modal-title')[0]
+           
+            kodeSoal = ""+kode+turnSoal;
+            console.log(kodeSoal);
+            titleSoal.innerHTML = kodeSoal.toUpperCase();
+                    const xhr = new XMLHttpRequest();
+                    const url = '/getsoal?kodeSoal=' + kodeSoal;
+                    xhr.open('GET', url);
+                    xhr.onload = function() {
+                        if (xhr.status === 200) {
+                            const data = JSON.parse(xhr.responseText);
+                            question = data.soal;
+                            answer = data.jawaban;
+                             
+
+                        } else {
+                            console.error('Error:', xhr.statusText);
+                        }
+                    };
+                    xhr.send();
+                    reveal1();
+                    
                 updateLabelBorders();
-                 blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
                  
-                 turn = turn+1;
+                 
                  if(mode4)turn%=4;
                 else turn%=3;
                 updateLabelBorders();
                 console.log(turn);
                 closeSoal();
+                if(sesi==2){
+                  wrong = 50;
+                }
         })
         quizC.addEventListener("click",function(e){
-           
-
-            if(turn==0){
-                blocknow.innerHTML = "<button class='btn-custom marked' style='background: red;' >A</button>";
-                matrix[curI][curJ] = 0;
-                console.log(matrix[curI][curJ]);
-            }else if(turn==1){
-                 blocknow.innerHTML = "<button class='btn-custom marked' style='background: blue;' >B</button>";
-                 matrix[curI][curJ] = 1;
-                console.log(matrix[curI][curJ]);
-            }else if(turn==2){
-                 blocknow.innerHTML = "<button class='btn-custom marked' style='background: yellow;' >C</button>";
-                 matrix[curI][curJ] = 2;
-                console.log(matrix[curI][curJ]);
-            }else{
-                blocknow.innerHTML = "<button class='btn-custom marked' style='background: green;' >D</button>";
-                 matrix[curI][curJ] = 3;
-                console.log(matrix[curI][curJ]);
+           closeSoal();
+           timerPrepare();
+          if(sesi==1){
+              turnSoal++;
+              if(turnSoal>5){
+                if(mode4){
+                  if(cntSesi==4){
+                    sesi+=1;
+                }
+              }else{
+                if(cntSesi==3){
+                  sesi+=1;
+                }
+              }
+                quizC.setAttribute("data-dismiss", "modal");
+                turn+=1;
+                return;
+              }
             }
-                
+            let titleSoal = document.getElementsByClassName('modal-title')[0]
+          
+            kodeSoal = ""+kode+turnSoal;
+            console.log(kodeSoal);
+            titleSoal.innerHTML = kodeSoal.toUpperCase();
+                    const xhr = new XMLHttpRequest();
+                    const url = '/getsoal?kodeSoal=' + kodeSoal;
+                    xhr.open('GET', url);
+                    xhr.onload = function() {
+                        if (xhr.status === 200) {
+                            const data = JSON.parse(xhr.responseText);
+                            question = data.soal;
+                            answer = data.jawaban;
+                             
+
+                        } else {
+                            console.error('Error:', xhr.statusText);
+                        }
+                    };
+                    xhr.send();
+      
             // Check if any row has the same value in all elements
 
-             turn = turn+1;
+             
              if(mode4)turn%=4;
                 else turn%=3;
             updateLabelBorders();
             closeSoal();
+            if(sesi==2){
+                  wrong = 50;
+                }
         })
+
+
+
+
+
+
+        next.addEventListener('click',()=>{
+          turnSoal+=1;  
+          closeSoal();
+          const btnA = document.getElementById("btnA");
+          const btnB = document.getElementById("btnB");
+          const btnC = document.getElementById("btnC");
+          const btnD = document.getElementById("rebutanD");
+
+          // Set styles for each button
+          btnA.style.background = "red";
+          btnA.style.fontWeight = "bold";
+
+          btnB.style.background = "blue";
+          btnB.style.fontWeight = "bold";
+
+          btnC.style.background = "yellow";
+          btnC.style.fontWeight = "bold";
+
+          btnD.style.background = "green";
+          btnD.style.fontWeight = "bold";
+           timerPrepare();
+    
+          let titleSoal = document.getElementsByClassName('modal-title')[0]
+          
+          kodeSoal = ""+kode+turnSoal;
+          console.log(kodeSoal);
+          titleSoal.innerHTML = kodeSoal.toUpperCase();
+                  const xhr = new XMLHttpRequest();
+                  const url = '/getsoal?kodeSoal=' + kodeSoal;
+                  xhr.open('GET', url);
+                  xhr.onload = function() {
+                      if (xhr.status === 200) {
+                          const data = JSON.parse(xhr.responseText);
+                          question = data.soal;
+                          answer = data.jawaban;
+                           
+
+                      } else {
+                          console.error('Error:', xhr.statusText);
+                      }
+                  };
+                  xhr.send();
+    })
+
+
+
         function updateLabelBorders() {
              tmpA = 0;
              tmpB = 0;
              tmpC = 0;
              tmpD = 0;
-            for (let i = 0; i < matrix.length; i++) {
-              let row = matrix[i];
-              let firstValue = row[0];
-              if(firstValue != -1){
-                  let isRowSame = row.every(element => element === firstValue);
-                  
-                  if (isRowSame) {
-                    if(firstValue == 0 )tmpA++;
-                    if(firstValue == 1)tmpB++;
-                    if(firstValue == 2)tmpC++;
-                    if(firstValue == 3)tmpD++;
-                    console.log('Row', i, 'has same value:', firstValue);
-                  }
-                }
-            }
-
-            // Check if any column has the same value in all elements
-            for (let j = 0; j < matrix[0].length; j++) {
-              let column = matrix.map(row => row[j]);
-              let firstValue = column[0];
-              if(firstValue != -1){
-                      let isColumnSame = column.every(element => element === firstValue);
-                      
-                      if (isColumnSame) {
-                        if(firstValue == 0 )tmpA++;
-                    if(firstValue == 1)tmpB++;
-                    if(firstValue == 2)tmpC++;
-                    if(firstValue == 3)tmpD++;
-                        console.log('Column', j, 'has same value:', firstValue);
-                      }
-                }
-            }
+           
+            
                 
                 
                 storedScoreA += (tmpA-bonusA)*correct;
@@ -402,14 +510,14 @@
           }
 
         }
-        function reveal1(que){
-                 
+        function reveal1(){
+          if(que.innerHTML!='Pertanyaan')timerStart();  
                  que.innerHTML = '<h1>'+question+'</h1>';
                  console.log(question);
                  document.getElementById('ans').innerHTML = "(Jawaban)";
-                 timerStart();  
+                 
                              };
-         function reveal2(ans){
+         function reveal2(){
                           
                             timerFinish();
                             ans.innerHTML = '<h2>'+answer+'</h2>';
@@ -418,7 +526,9 @@
             boxQue.innerHTML = 'Pertanyaan';
                 boxAns.innerHTML = '';
         }
+        
     </script>
+    
 <script type="text/javascript">
  
 </script>

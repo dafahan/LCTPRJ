@@ -7,14 +7,14 @@ app.debug = True
 
 if len(sys.argv) < 2:
     print("Usage: python app.py <arg1>")
+    exit
 else:
     arg1 = sys.argv[1].lower()
     babak = arg1
     filepath = f"soal/{babak}.csv"
     if arg1 != 'final':
         convert(filepath)
-    else:
-        ""
+    
 
 soal, jawaban = load_data(filepath)
 
