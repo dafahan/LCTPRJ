@@ -2,7 +2,9 @@ from flask import Flask, render_template,send_from_directory,request,jsonify
 from read import load_data
 app = Flask(__name__, static_url_path='/static')
 app.debug = True
-soal, jawaban = load_data('soal.csv')
+soal, jawaban = load_data('soal/babak1.csv')
+
+#C:\xampp\htdocs\prototypelct\readcsv.py
 
 @app.route('/timeUp.mp3')
 def send_timeup(): 

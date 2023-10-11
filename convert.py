@@ -44,4 +44,4 @@ df = df.sort_values(by='question_id')
 # Write the sorted data to a new CSV file
 df.to_csv('soal.csv', index=False)
 
-print("Data has been sorted and saved to soal_sorted.csv")
+print("Data has been sorted and saved to soal.csv")

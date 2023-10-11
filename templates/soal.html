@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <link rel="stylesheet" href="{{url_for('static', filename='res/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='lct.css') }}?v=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='soal.css') }}?v=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='scoreBoard.css') }}?v=1">
     <title>LCT Komputer PRJ IX</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,12 +36,12 @@
     <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header" >
-        <div class="d-flex" >
-        <div id="timer_title">Timer</div>
-            <div id="seconds" >10 : 00</div>
-        </div>
-        <h5 class="modal-title" id="quizModalLabel" style="font-size: 40px;"></h5>
+      <div class="modal-header" style="position: relative;">
+        <div class="d-flex p-3" >
+            <div id="timer_title" >Timer</div>
+                <div id="seconds" style="margin-left: 25px;">10 : 00</div>
+            </div>
+        <h5 class="modal-title" id="quizModalLabel" style="font-size: 40px;position: absolute;left:48%"></h5>
         <a href="" data-dismiss="modal" onclick="closeSoal();"><i class="fa fa-window-close" style="color:black;font-size: 40px;" aria-hidden="true"></i></a>
       </div>
               <div class="modal-body">
@@ -123,11 +123,33 @@
     <br>
     <br>
     <br>
-    <div class="fluid-container">
-      <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
-        A1
-    </button>
-    </div>
+   
+    <table class="tic">
+      <tr class="tac">
+          <td class="toe">
+              <a  class="block" id = 'a1' target="_blank">
+                  <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
+                      A1
+                  </button>
+              </a>
+          </td>
+          <td class="toe">
+              <a class="block" id = 'b1' target="_blank">
+                  <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
+                      B1
+                  </button>
+              </a>
+          </td>
+          <td class="toe">
+              <a class="block" id = 'c1' target="_blank">
+                  <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
+                      C1
+                  </button>
+              </a>
+          </td>
+        
+      </tr>
+  </table>
     
     <br>
    

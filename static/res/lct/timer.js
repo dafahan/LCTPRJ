@@ -67,6 +67,7 @@ function timerFinish(){
     
 }
 function timerPrepare(){
+   
     count = 1000;
     soundCounter = 12;
     interval;
