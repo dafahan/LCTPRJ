@@ -1,37 +1,37 @@
 question_id,question,answer
-a1,"Siapa penulis novel ""1984""?",George Orwell
-a2,Apa nama alat musik gesek yang terkenal?,Biola
-a3,Apa nama ilmuwan yang menemukan hukum gerak planet?,Johannes Kepler
-a4,"Apa nama benua yang dijuluki ""Benua Es""?",Antartika
-a5,Siapa ilmuwan yang menemukan radioaktivitas?,Marie Curie
-a6,"Siapa penulis drama ""Romeo dan Juliet""?",William Shakespeare
-b1,Apa nama ilmuwan yang menemukan hukum gravitasi?,Isaac Newton
-b2,Apa nama sungai terpanjang di dunia?,Sungai Nil
-b3,Apa nama alat yang digunakan untuk mengukur waktu?,Jam
-b4,Apa nama alat yang digunakan untuk mengukur temperatur?,Termometer
-b5,"Siapa penulis drama tragedi terkenal ""Romeo dan Juliet""?",William Shakespeare
-b6,Apa nama alat yang digunakan untuk mengukur kecepatan angin?,Anemometer
-c1,"START pseudocode<br><br>SET a = 5<br><br>SET b = 2<br>a = a + b<br>b = a - b<br>a = a - b<br>DISPLAY a, b<br>END pseudocode<br>", 2 5 
-c2,Apa nama planet terdekat dari Matahari?,Merkurius
-c3,Siapa penemu telepon?,Alexander Graham Bell
-c4,Apa nama alat transportasi yang terbang di udara?,Pesawat terbang
-c5,Apa nama alat yang digunakan untuk mengukur jarak?,Meter
-c6,Apa ibu kota Prancis?,Paris
-d1,"Siapa pelukis terkenal yang melukis ""Mona Lisa""?",Leonardo da Vinci
-d2,START pseudocode<br><br>SET num = 1234<br>SET x= 0<br><br>WHILE num > 0<br>    SET digit = num % 10<br>    SET x= (x * 10) + digit<br>    SET num = num / 10<br>ENDWHILE<br><br>DISPLAY x<br><br>END pseudocode,4321 
-d3,Apa nama ilmuwan yang menemukan teori relativitas khusus?,Albert Einstein
-d4,Apa nama ilmuwan yang menemukan teori gravitasi?,Isaac Newton
-d5,Siapa ilmuwan yang menemukan struktur DNA?,James Watson dan Francis Crick
-d6,Siapa presiden pertama Amerika Serikat?,George Washington
-e1,Apa nama ilmuwan yang menemukan hukum termodinamika?,James Clerk Maxwell
-e2,Apa nama planet terbesar di tata surya?,Yupiter
-e3,"Siapa pelukis terkenal yang melukis ""Starry Night""?",Vincent van Gogh
-e4,Apa nama benua terbesar di dunia?,Asia
-e5,"Siapa penulis novel ""To Kill a Mockingbird""?",Harper Lee
-e6,Siapa penemu komputer pertama?,Charles Babbage
-f1,"Siapa penulis ""The Great Gatsby""?",F. Scott Fitzgerald
-f2,Apa nama ibu kota Jepang?,Tokyo
-f3,Siapa presiden Amerika Serikat yang memerintah selama Perang Saudara?,Abraham Lincoln
-f4,"Siapa penulis novel ""Harry Potter""?",J.K. Rowling
-f5,Siapa pencipta teori evolusi?,Charles Darwin
-f6,Apa nama alat yang digunakan untuk mengukur tekanan udara?,Barometer
+a1,Asisten digital yang disediakan oleh Apple bernama?,Siri
+a2,Antarmuka teks atau grafis yang digunakan oleh pengguna untuk berinteraksi dengan sistem operasi Linux adalah?,Shell
+a3,DEKLARASI<br>i : integer<br>DESKRIPSI<br>for i ← 3 to 5 do<br>write(i+2)<br>endfor<br>Output dari algoritma tersebut adalah?,5 6 7 
+a4,Tahun berapa HTML 1.0 dirilis?,1993
+a5,Simbol atau lambang yang digunakan untuk mewakili suatu bilangan disebut?,Angka
+a6,"Tentukan banyaknya Permutasi yang terjadi jika akan disusun tiga huruf yang diambil dari abjad A,B,C,D,E!",60
+b1,"Pada generasi komputer ke-2, terjadi penggunaan komponen utama berupa?",Transistor
+b2,"Setelah proses instalasi selesai, apa yang perlu dilakukan sebelum dapat menggunakan Linux?",Reboot
+b3,Untuk mengetahui apakah komputer dalam jaringan sudah terhubung dengan komputer lain digunakan perintah?,Ping 
+b4,Himpunan bilangan real dan imajiner tersebut disebut dengan?,Bilangan Kompleks
+b5,Ada berapa lapisan yang terdapat pada OSI layer?,7 
+b6,"Jika A1 berisi nilai 70 dan pada sel B1 berisi formula =IF(A1>=70,”LULUS”,”TIDAK LULUS”), maka hasil yang didapat pada B1 adalah?",LULUS
+c1,"Cabang teknologi yang berhubungan dengan desain, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot adalah?",Robotika
+c2,Istilah yang digunakan untuk halaman pada Microsoft Excel disebut dengan?,Sheet
+c3,"Untuk menyimpan suatu file dalam Microsoft Word, nama file maksimum berisi berapa karakter?",254
+c4,Sistem bilangan yang memiliki 10 simbol angka adalah ?,Desimal
+c5,"Siapakah tokoh yang dianggap sebagai ""Bapak Komputer""?",Charles Babbage
+c6,Formula pada Microsoft Excel untuk menghitung berapa banyak data maupun argumen yang berupa angka pada sekumpulan cell atau range adalah?,COUNT
+d1,Proses pengaturan urutan eksekusi program atau proses dalam sistem komputer disebut?,scheduling
+d2,"C++, Basic  dan Java merupakan bahasa pemrograman tingkat?",Tinggi
+d3,Berapa nilai dari 27 mod 3?,0 
+d4,Aplikasi pengolah angka bawaan dari macOS bernama?,Numbers
+d5,Komputer pada generasi kedua menggantikan bahasa mesin dengan bahasa?,Bahasa Assembly 
+d6,"START pseudocode<br><br>SET a = 5<br>SET b = 2<br>SET c = a + b<br>SET d = a - b<br>DISPLAY c, d<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?","c=7, d=3"
+e1,Pada tahun berapa World Wide Web (WWW) diperkenalkan kepada publik?,1993
+e2,Processor Cyrix 486SLC adalah processor pada generasi ke?,Generasi ke-4
+e3,DEKLARASI<br>i 	: integer<br>sum : integer<br>Begin<br>i ← 0<br>sum ← 5<br>While(i < 5)<br>sum ← sum + i <br>i ← i + 1<br>endwhile<br>end<br>Output dari algoritma di atas adalah?,15
+e4,Alat yang memiliki fungsi ganda yaitu sebagai input dan output disebut?,Terminal
+e5,Berapa jumlah tabung vakum yang digunakan pada komputer ENIAC?,18.000
+e6,Pada tahun berapakah generasi komputer yang ketiga dimulai?,1964
+f1,"Diketahui : <br>P = { x | 5 < x < 25,  x ⋲ bilangan prima }<br>Q = { x | 4 < x < 14,  x ⋲ bilangan ganjil }<br>Maka tentukanlah anggota dari A ∩ B?","A ∩ B = {7,11,13}"
+f2,Bagian dari CPU yang berfungsi untuk menangani masalah perhitungan aritmatika dan proses angka adalah?,ALU
+f3,Negara yang mempelopori perkembangan komputer generasi kelima adalah?,Jepang 
+f4,Perangkat Keras Komputer yang merupakan otak dari sebuah komputer yang mengontrol seluruh proses di komputer adalah?,Prosesor
+f5,Komputer diambil dari kosa kata “To compute”. Kata tersebut diambil dari bahasa?,Bahasa inggris
+f6,"Secara default, Quick acces toolbar pada Microsoft Word berisi ikon?","Save, Undo, dan Redo"

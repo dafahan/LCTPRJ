@@ -1,8 +1,22 @@
+import sys
 from flask import Flask, render_template,send_from_directory,request,jsonify
 from read import load_data
+from convert import convert
 app = Flask(__name__, static_url_path='/static')
 app.debug = True
-soal, jawaban = load_data('soal/babak1.csv')
+
+if len(sys.argv) < 2:
+    print("Usage: python app.py <arg1>")
+else:
+    arg1 = sys.argv[1].lower()
+    babak = arg1
+    filepath = f"soal/{babak}.csv"
+    if arg1 != 'final':
+        convert(filepath)
+    else:
+        ""
+
+soal, jawaban = load_data(filepath)
 
 #C:\xampp\htdocs\prototypelct\readcsv.py
 
@@ -24,7 +38,7 @@ def lct():
 
 @app.route('/')
 def index():
-    return render_template('soal.html', quiz=soal['a1'], ans=jawaban['a1'])
+    return render_template('soal.html'  )
 
 @app.route('/tes')
 def tes():

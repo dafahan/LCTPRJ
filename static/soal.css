@@ -116,7 +116,13 @@ input:checked + .slider:before {
     font-weight: 800;
 }
 
+.btn-custom1{
+  
+    width: 300px;
+    height: 75px;
+    font-weight:700;
 
+}
 .q-num{
     border-right: 5px solid black;
     text-align: center;
