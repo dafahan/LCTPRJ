@@ -62,16 +62,21 @@
         </div>
 
       <div class="modal-footer">
-        <div class="boxREBUTAN" id="boxREBUTAN">
+        <div class="form-group" style="width: 8%;">
+          <input type="text" class="form-control" id="lelang" placeholder="POIN" style="display: none;">
+        </div>
+        <div class="boxREBUTAN" id="boxREBUTAN" style="display: none;">
+          
           <button type="button" class="btn modalbtn rebutanbtn" id="btnA"   value="false" style="background: red;font-weight: bold;">A</button>
           <button type="button" class="btn  modalbtn rebutanbtn" id="btnB"   value="true" style="background:blue;font-weight: bold;">B</button>
           <button type="button" class="btn  modalbtn rebutanbtn" id="btnC"   value="true" style="background:yellow;font-weight: bold;">C</button>
-          <button type="button" class="btn  modalbtn rebutanbtn" id="rebutanD"   value="true" style="background:green;font-weight: bold;display: none;">D</button><button type="button" class="btn btn-success modalbtn" id="next"   value="false"><i class="fa fa-arrow-right"></i></button>
+          <button type="button" class="btn  modalbtn rebutanbtn" id="rebutanD"   value="true" style="background:green;font-weight: bold;display: none;">D</button>
+          <button type="button" class="btn btn-success modalbtn" id="next"   value="false"><i class="fa fa-arrow-right"></i></button>
                     
         </div>
-        <div id="boxCW" style="display: none;">
-        <button type="button" class="btn btn-danger modalbtn" id="wrongBtn"   value="false">Wrong</button>
-        <button type="button" class="btn btn-success modalbtn" id="correctBtn"   value="true">Correct</button>
+        <div id="boxCW" >
+        <button type="button" class="btn btn-danger " id="wrongBtn"   value="false">Wrong</button>
+        <button type="button" class="btn btn-success " id="correctBtn"   value="true">Correct</button>
       </div>
       
      </div>
@@ -196,8 +201,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
    <script type="text/javascript">
+
+    //DEV DEBUG !!!
+      sesi = 2;
+      mode4 = true;
+    //
+    
+    let modalbtn = document.querySelectorAll(".modalbtn");
     let next = document.getElementById('next');
-   
+    let lelang = document.getElementById('lelang');
+    let rebutan = document.getElementById('boxREBUTAN');
+    let cw = document.getElementById('boxCW');
       wrong = 0;
         let kode = '';
         let que = document.getElementById('que');
@@ -261,13 +275,35 @@
         let answer = '';
         let kodeSoal = '';
         let turnSoal = 1;
+        lelang.addEventListener("change", function () {
+          const inputValue = lelang.value;
+          const intValue = parseInt(inputValue, 10);
+
+          if (!isNaN(intValue)&&sesi==3) {
+           wrong = intValue;
+           correct = intValue;
+          } 
+        });
         for(let i=0; i<blocks.length; i++){
           
           blocks[i].addEventListener('click',(e)=>{
             blocknow = blocks[i];
             
-                blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
-             
+            blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
+            if(sesi==2){
+              wrong = 50;
+              cw.style.display = 'none';
+              rebutan.style.display='inline-flex';
+                modalbtn.forEach((btn) => {
+                  btn.style.marginLeft = "2px";
+                  btn.style.marginRight = "2px";
+                });
+            }
+            if(sesi==3){
+              closeSoal();
+              next.removeAttribute("data-dismiss");
+              lelang.style.display = 'inline-flex';
+            }
             turnSoal = 1;
             quizC.removeAttribute("data-dismiss");
             quizW.removeAttribute("data-dismiss");
@@ -415,7 +451,31 @@
 
 
         next.addEventListener('click',()=>{
+         
+          for(let i=0;i<modalbtn.length;i++){
+            if(modalbtn[i].style.background == 'black'){
+              if(i==0)storedScoreA -= wrong;
+              if(i==1)storedScoreB -= wrong;
+              if(i==2)storedScoreC -= wrong;
+              if(i==3)storedScoreD -= wrong;
+            }
+            if(modalbtn[i].style.background == 'none'){
+              if(i==0)storedScoreA += correct;
+              if(i==1)storedScoreB += correct;
+              if(i==2)storedScoreC += correct;
+              if(i==3)storedScoreD += correct;
+            }
+          }
+          updateLabelBorders();
           turnSoal+=1;  
+          if(sesi == 3){
+            
+          }
+          if(turnSoal>10){
+            next.setAttribute("data-dismiss", "modal");
+            sesi++;
+            return
+          }
           closeSoal();
           const btnA = document.getElementById("btnA");
           const btnB = document.getElementById("btnB");
