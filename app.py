@@ -43,5 +43,6 @@ def index():
 @app.route('/tes')
 def tes():
 	return render_template('prototype.html')
+
 if __name__ == '__main__':
     app.run(host='localhost')

@@ -37,7 +37,7 @@ let boxAns = document.getElementById('ans');
 let correct = 100;
 let wrong = 50;
 let cnt = 0;
-let mode4 = false
+let mode4 = false;
 {// Team A
 
     

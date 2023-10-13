@@ -203,7 +203,7 @@
    <script type="text/javascript">
 
     //DEV DEBUG !!!
-      sesi = 2;
+     // sesi = 2;
       mode4 = true;
     //
     
@@ -248,10 +248,21 @@
         let btnRebut = document.getElementsByClassName('rebutanbtn');
         for(let i =0 ;i<btnRebut.length;i++){
           btnRebut[i].addEventListener("dblclick",()=>{
-            btnRebut[i].style.background = 'black';
+           
+              btnRebut[i].style.background = 'black';
+            
+            
           });
           btnRebut[i].addEventListener('click',()=>{
-            btnRebut[i].style.background = 'none';
+            if(btnRebut[i].style.background == 'none'){
+              if(i==0)btnRebut[i].style.background = 'red';
+              if(i==1)btnRebut[i].style.background = 'blue';
+              if(i==2)btnRebut[i].style.background = 'yellow';
+              if(i==3)btnRebut[i].style.background = 'green';
+            }else{
+              btnRebut[i].style.background = 'none';
+            }
+          
           });
           
         }
@@ -260,7 +271,10 @@
             document.getElementById('teamD').style.display = (mode4? 'flex' : 'none');
             document.getElementById('rebutanD').style.display = (mode4? 'inline-flex' : 'none');
         })
-
+        if(mode4){
+           document.getElementById('teamD').style.display = 'flex';
+           document.getElementById('rebutanD').style.display = 'inline-flex';
+        }
         updateLabelBorders();
         logoKiri[0].addEventListener('click',function(e){
             turn++;
@@ -289,7 +303,7 @@
           blocks[i].addEventListener('click',(e)=>{
             blocknow = blocks[i];
             
-            blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
+            blocknow.innerHTML = ((i<4)?"<button class='btn-custom marked' style='background: black;' >A</button>": "<button class='btn-custom1 marked' style='background: black;' >A</button>");
             if(sesi==2){
               wrong = 50;
               cw.style.display = 'none';
@@ -468,8 +482,10 @@
           }
           updateLabelBorders();
           turnSoal+=1;  
-          if(sesi == 3){
-            
+          if(sesi == 3&&turnSoal>6){
+            next.setAttribute("data-dismiss", "modal");
+            sesi++;
+            return
           }
           if(turnSoal>10){
             next.setAttribute("data-dismiss", "modal");
@@ -583,6 +599,7 @@
                             ans.innerHTML = '<h2>'+answer+'</h2>';
                             };
         function closeSoal(){
+          if(sesi==3)lelang.value = '';
             boxQue.innerHTML = 'Pertanyaan';
                 boxAns.innerHTML = '';
         }

@@ -55,8 +55,19 @@
         </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger modalbtn" id="wrongBtn"  data-dismiss="modal" value="false">Wrong</button>
-        <button type="button" class="btn btn-success modalbtn" id="correctBtn"  data-dismiss="modal" value="true">Correct</button>
+        <div class="boxREBUTAN" id="boxREBUTAN" >
+          
+            <button type="button" class="btn modalbtn rebutanbtn" id="btnA"   value="false" style="background: red;font-weight: bold;">A</button>
+            <button type="button" class="btn  modalbtn rebutanbtn" id="btnB"   value="true" style="background:blue;font-weight: bold;">B</button>
+            <button type="button" class="btn  modalbtn rebutanbtn" id="btnC"   value="true" style="background:yellow;font-weight: bold;">C</button>
+            <button type="button" class="btn  modalbtn rebutanbtn" id="rebutanD"   value="true" style="background:green;font-weight: bold;display: none;">D</button>
+            <button type="button" class="btn btn-info modalbtn" id="check"   value="false" data-dismiss='modal'><i class="fa fa-check"></i></button>
+                      
+          </div>
+          <div id="boxCW" style="display: none;">
+          <button type="button" class="btn btn-danger " id="wrongBtn"   value="false">Wrong</button>
+          <button type="button" class="btn btn-success " id="correctBtn"   value="true">Correct</button>
+        </div>
       </div>
     </div>
   </div>
@@ -404,6 +415,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="text/javascript">
         
+    //DEV DEBUG !!!
+     // sesi = 2;
+      mode4 = true;
+    //
+    let blocknow = null;
         let labelA = document.getElementById('A');
         let labelB = document.getElementById('B');
         let labelC = document.getElementById('C');
@@ -432,11 +448,56 @@
         }
         let logoKiri = document.getElementsByClassName('logo-kiri');
         let logoKanan = document.getElementsByClassName('logo-kanan');
-
+        let btnRebut = document.getElementsByClassName('rebutanbtn');
+        for(let i =0 ;i<btnRebut.length;i++){
+          btnRebut[i].addEventListener("dblclick",()=>{
+           
+              btnRebut[i].style.background = 'black';
+            
+            
+          });
+          btnRebut[i].addEventListener('click',()=>{
+            if(btnRebut[i].style.background == 'none'){
+              if(i==0)btnRebut[i].style.background = 'red';
+              if(i==1)btnRebut[i].style.background = 'blue';
+              if(i==2)btnRebut[i].style.background = 'yellow';
+              if(i==3)btnRebut[i].style.background = 'green';
+            }else{
+              btnRebut[i].style.background = 'none';
+            }
+          
+          });
+          
+        }
+        let check = document.getElementById('check');
+        check.addEventListener('click',()=>{
+            let fndC = false;
+            for(let i =0 ;i<btnRebut.length;i++){
+                if(btnRebut[i].style.background == 'none'){
+                    matrix[curI][curJ][i] = 1;
+                    blocknow.innerHTML = "<button class='btn-custom marked' style='background: "+clr[i]+";' >"+ch[i]+"</button>";
+                    eval("storedScore"+ch[i]+"+=correct;");
+                   fndC = true;
+                }
+                if(btnRebut[i].style.background == 'black'){
+                    matrix[curI][curJ][i] = 0;
+                    eval("storedScore"+ch[i]+"-=wrong;");
+                }
+                
+            }
+            if(!fndC)blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
+                 
+            closeSoal();
+        })
         logoKanan[0].addEventListener('click',(e)=>{
             mode4 = !mode4;
             document.getElementById('teamD').style.display = (mode4? 'flex' : 'none');
+            document.getElementById('rebutanD').style.display = (mode4? 'inline-flex' : 'none');
         })
+        if(mode4){
+           document.getElementById('teamD').style.display = 'flex';
+           document.getElementById('rebutanD').style.display = 'inline-flex';
+        }
 
         updateLabelBorders();
         logoKiri[0].addEventListener('click',function(e){
@@ -446,7 +507,7 @@
             updateLabelBorders();
             console.log(turn);
         })
-        let blocknow = null;
+        
         const soal = document.getElementsByClassName('btn-custom');
         let question = '';
         let answer = '';
@@ -486,6 +547,8 @@
             })
             }
         }
+
+        
         quizW.addEventListener("click",function(e){
                 
                 if(turn == 0)matrix[curI][curJ] = 10;
@@ -532,6 +595,7 @@
             updateLabelBorders();
             closeSoal();
         })
+    
         function updateLabelBorders() {
              tmpA = 0;
              tmpB = 0;
@@ -554,6 +618,7 @@
             }
 
             // Check if any column has the same value in all elements
+            /*
             for (let j = 0; j < matrix[0].length; j++) {
               let column = matrix.map(row => row[j]);
               let firstValue = column[0];
@@ -570,7 +635,8 @@
                 }
             }
                 
-                
+                */
+
                 storedScoreA += (tmpA-bonusA)*correct;
                 bonusA = tmpA;
                 scoreA.innerHTML = storedScoreA;
@@ -612,28 +678,44 @@
           }
 
         }
-        function reveal1(que){
-                 if(que.innerHTML !='Pertanyaan')return
+        function reveal1(){
+          if(que.innerHTML!='Pertanyaan')timerStart();  
                  que.innerHTML = '<h1>'+question+'</h1>';
                  console.log(question);
                  document.getElementById('ans').innerHTML = "(Jawaban)";
-                
-                 timerStart();  
                  
                              };
-         function reveal2(ans){
+         function reveal2(){
                           
                             timerFinish();
                             ans.innerHTML = '<h2>'+answer+'</h2>';
                             };
         function closeSoal(){
+            updateLabelBorders();
             timerFinish();
+            const btnA = document.getElementById("btnA");
+          const btnB = document.getElementById("btnB");
+          const btnC = document.getElementById("btnC");
+          const btnD = document.getElementById("rebutanD");
+
+          // Set styles for each button
+          btnA.style.background = "red";
+          btnA.style.fontWeight = "bold";
+
+          btnB.style.background = "blue";
+          btnB.style.fontWeight = "bold";
+
+          btnC.style.background = "yellow";
+          btnC.style.fontWeight = "bold";
+
+          btnD.style.background = "green";
+          btnD.style.fontWeight = "bold";
             boxQue.innerHTML = 'Pertanyaan';
                 boxAns.innerHTML = '';
         }
     </script>
 <script type="text/javascript">
- 
+    
 </script>
 </body>
 </html>

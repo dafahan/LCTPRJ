@@ -20,7 +20,6 @@ connection = pymysql.connect(
 @app.route('/', methods=["POST","GET"])
 
 def index():
-
     return render_template('sign-in.html')
 
 @app.route('/peserta', methods=["POST","GET"])
@@ -75,7 +74,7 @@ def login():
 
 @app.route('/soal')
 def soal():
-	return render_template('soal.html',quiz=soal['a1'],ans=awaban['a1'])
+	return render_template('soal.html',quiz=soal['a1'],ans=jawaban['a1'])
 
 @app.route('/logout')
 def logout():
@@ -96,5 +95,5 @@ def handle_button_click(data):
     	emit('button-disable')
 
 if __name__ == '__main__':
-	socketio.run(app,host='10.20.29.52',port=5000)
+	socketio.run(app,host='localhost',port=5000)
  

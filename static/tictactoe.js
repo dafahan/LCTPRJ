@@ -29,31 +29,37 @@ let tmpC = 0;
 let tmpD = 0;
 let matrix = [];
 let turn = 0;
-const quizW = document.getElementById('wrongBtn');
-const quizC = document.getElementById('correctBtn');
+let quizW = document.getElementById('wrongBtn');
+let quizC = document.getElementById('correctBtn');
 let boxQue = document.getElementById('que');
 let boxAns = document.getElementById('ans');
 let correct = 100;
 let wrong = 50;
 let cnt = 0;
 let curI = null;
+let ch = ['A', 'B', 'C', 'D'];
+let clr = ['red','blue','yellow','green'];
         let curJ = null;
         let tmp = []
         let mode4 = false;
         // Convert blocks to a 2D matrixay
         for (let i = 0; i < 6; i++) {
           let row = []
-          let row2 = [];
+          let matrix2d = [];
 
           // Iterate over the child elements of each block
           for (let j = 0; j < 6; j++) {
+            let matrix1d = [];
             row.push(blocks[cnt]);
-            row2.push(-1);
+            for(let x = 0; x <4 ; x++){
+                matrix1d.push(-1);
+            }
+            matrix2d.push(matrix1d);
             cnt++;
           }
-
+          matrix.push(matrix2d);
           tmp.push(row);
-          matrix.push(row2);
+         
         }
         blocks = tmp;
 for (let i = 0; i < 6; i++) {
@@ -61,8 +67,23 @@ for (let i = 0; i < 6; i++) {
                 blocks[i][j].addEventListener("dblclick",function(e){
                 e.preventDefault();
 
-                let op = matrix[i][j];
-                         
+                
+                for(let x = 0;x<4;x++){
+                    let op = matrix[i][j][x];
+                    
+                    let minus = 'storedScore'+ch[x]+'-=correct';
+                    let plus = 'storedScore'+ch[x]+'+=wrong';
+                    if(op==1){
+                        eval(minus);
+                    }
+                    if(op==0){
+                        eval(plus);
+                    }
+                    let upd = 'score'+ch[x]+'.innerHTML = storedScore'+ch[x];
+                    eval(upd);
+                    matrix[i][j][x] = -1;
+                 }
+                 /*
                 if(op == 0){
                     storedScoreA -= correct;
                     scoreA.innerHTML = storedScoreA;
@@ -88,13 +109,14 @@ for (let i = 0; i < 6; i++) {
                     storedScoreD += wrong;
                     scoreD.innerHTML = storedScoreD;   
                 }
+                */
                 turn=0;
                 
                 const block = document.getElementById(blocks[i][j].id);
                 let kode = blocks[i][j].id;
                 kode = kode.toUpperCase();
                 block.innerHTML = "<button class='btn-custom' data-toggle='modal' data-target='#quizModal'>"+kode+"</button>";
-                matrix[i][j] = -1;
+                
                  updateLabelBorders();
              })
         }
