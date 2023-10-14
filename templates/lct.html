@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <style type="text/css">
+    .question{
+        font-weight: 500;
+    }
     #que img{
       display: flex;
       width: 100%;
@@ -93,7 +96,7 @@
     <div class="container score-panel" style="padding-bottom: 5px;">
         <!-- <div id="title">Score Board</div> -->
         <div class="team" id="teamA">
-            <div id="A" class="label" style="border:solid black 1px;">A</div>
+            <div id="A" class="label" >A</div>
             <div id="scoreA" class="score">0</div>
             <input type="text" id="fieldA" class="field">
             <!-- <div id="addA" class="button addAll">+</div> -->
@@ -510,7 +513,7 @@
             if(mode4)turn%=4;
             else turn%=3
             updateLabelBorders();
-            console.log(turn);
+           // console.log(turn);
         })
         
         const soal = document.getElementsByClassName('btn-custom');
@@ -531,7 +534,7 @@
 
                     
                     const kodeSoal = blocks[i][j].id;
-                    console.log(kodeSoal);
+                  //  console.log(kodeSoal);
                     titleSoal.innerHTML = kodeSoal.toUpperCase();
                     const xhr = new XMLHttpRequest();
                     const url = '/getsoal?kodeSoal=' + kodeSoal;
@@ -560,7 +563,7 @@
                 else if(turn == 1)matrix[curI][curJ]=20;
                 else if(turn == 2)matrix[curI][curJ]=30;
                 else matrix[curI][curJ]=40;
-                console.log(matrix[curI][curJ]);
+             //   console.log(matrix[curI][curJ]);
                 updateLabelBorders();
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
                  
@@ -568,7 +571,7 @@
                  if(mode4)turn%=4;
                 else turn%=3;
                 updateLabelBorders();
-                console.log(turn);
+              //  console.log(turn);
                 closeSoal();
         })
         quizC.addEventListener("click",function(e){
@@ -577,19 +580,19 @@
             if(turn==0){
                 blocknow.innerHTML = "<button class='btn-custom marked' style='background: red;' >A</button>";
                 matrix[curI][curJ] = 0;
-                console.log(matrix[curI][curJ]);
+                //console.log(matrix[curI][curJ]);
             }else if(turn==1){
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: blue;' >B</button>";
                  matrix[curI][curJ] = 1;
-                console.log(matrix[curI][curJ]);
+               // console.log(matrix[curI][curJ]);
             }else if(turn==2){
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: yellow;' >C</button>";
                  matrix[curI][curJ] = 2;
-                console.log(matrix[curI][curJ]);
+              //  console.log(matrix[curI][curJ]);
             }else{
                 blocknow.innerHTML = "<button class='btn-custom marked' style='background: green;' >D</button>";
                  matrix[curI][curJ] = 3;
-                console.log(matrix[curI][curJ]);
+              //  console.log(matrix[curI][curJ]);
             }
                 
             // Check if any row has the same value in all elements
@@ -608,37 +611,43 @@
              tmpD = 0;
           for(let i=0;i<6;i++){
             let sameRow = true;
-            if(blocks[i][0].style.background=='none')continue
-            let firstValue = blocks[i][0].style.background;
-            console.log(firstValue);
+            let e = blocks[i][0].firstElementChild;
+            if(e.style.background=='')continue
+            let firstValue = e.style.background;
+           
+           // console.log(firstValue);
             for(let j=0;j<6;j++){
-                if(blocks[i][j].style.background != firstValue) sameRow = false;
+                let el = blocks[i][j].firstElementChild;
+                if(el.style.background != firstValue) sameRow = false;
             }
             if(sameRow){
                 
-                let num = ch.indexOf(firstValue);
+                let num = clr.indexOf(firstValue);
                 let exe = "tmp"+ch[num]+"++";
                 eval(exe);
                 }
-                console.log("Y");
+             //   console.log("Y");
             }
             
-            sameRow = true;
+          
             for(let i=0;i<6;i++){
-            
-            if(blocks[0][i].style.background=='none')continue
-            let firstValue = blocks[0][i].style.background;
+             let sameRow = true;
+                let e = blocks[0][i].firstElementChild;
+              //  console.log(e);
+            if(e.style.background=='')continue
+            let firstValue = e.style.background;
             for(let j=0;j<6;j++){
-                if(blocks[j][i].style.background != firstValue) sameRow = false;
+                let el = blocks[j][i].firstElementChild;
+                if(el.style.background != firstValue) sameRow = false;
             }
             if(sameRow){
-                let num = arr.findIndex(firstValue);
+                let num = clr.indexOf(firstValue);
                 let exe = "tmp"+ch[num]+"++";
                 eval(exe);
                 }
-                console.log("Y");
+               // console.log("Y");
             }
-
+            
             // Check if any column has the same value in all elements
             /*
             for (let j = 0; j < matrix[0].length; j++) {
@@ -677,6 +686,7 @@
 
                 if(mode4)turn%=4;
                 else turn%=3;
+                /*
           if(turn==0){
             labelA.style.border = 'solid black 1px';
             labelB.style.border = 'none';
@@ -698,6 +708,7 @@
             labelC.style.border = 'none';
             labelD.style.border = 'solid black 1px';
           }
+          */
 
         }
         function reveal1(){
@@ -708,7 +719,7 @@
           else if(soalShown){
             countdown = ((countdown == 1)? 0:1);  
           }
-                 que.innerHTML = '<h1>'+question+'</h1>';
+                 que.innerHTML = question;
                  console.log(question);
                  document.getElementById('ans').innerHTML = "(Jawaban)";
                  

@@ -13,9 +13,10 @@ if len(sys.argv) < 2:
 else:
     arg1 = sys.argv[1].lower()
     babak = arg1
+    print(babak)
     filepath = f"soal/{babak}.csv"
-    if arg1 != 'final':
-        convert(filepath)
+    if arg1 not in ['final','semifinal1','semifinal2']:
+       convert(filepath)
     
 
 soal, jawaban = load_data(filepath)
@@ -48,6 +49,11 @@ def get_soal_jawaban():
 @app.route('/lct')
 def lct():
 	return render_template('lct.html')
+
+@app.route('/semifinal')
+def semifinal():
+	return render_template('soal2.html')
+
 
 @app.route('/')
 def index():

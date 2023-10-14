@@ -1,26 +1,21 @@
 soal:
-b2;Berapa jumlah tabung vakum yang digunakan pada komputer ENIAC?;18.000
-b3;Untuk mengetahui apakah komputer dalam jaringan sudah terhubung dengan komputer lain digunakan perintah?;Ping 
-b4;Aplikasi pengolah angka bawaan dari macOS bernama?;Numbers
-b5;Pada generasi komputer ke-2, terjadi penggunaan komponen utama berupa?;Transistor
-b6;Jika A1 berisi nilai 70 dan pada sel B1 berisi formula =IF(A1>=70,”LULUS”,”TIDAK LULUS”), maka hasil yang didapat pada B1 adalah?;LULUS
-c2;Istilah yang digunakan untuk halaman pada Microsoft Excel disebut dengan?;Sheet
-c3;Untuk menyimpan suatu file dalam Microsoft Word, nama file maksimum berisi berapa karakter?;254
-c4;Sistem bilangan yang memiliki 10 simbol angka adalah ?;Desimal
-c5;Siapakah tokoh yang dianggap sebagai "Bapak Komputer"?;Charles Babbage
-c6;DEKLARASI<br>i : integer<br>DESKRIPSI<br>for i ← 3 to 5 do<br>write(i+2)<br>endfor<br>Output dari algoritma tersebut adalah?;5 6 7 
-d2;C++, Basic  dan Java merupakan bahasa pemrograman tingkat?;Tinggi
-d3;Negara yang mempelopori perkembangan komputer generasi kelima adalah?;Jepang 
-d4;Himpunan bilangan real dan imajiner tersebut disebut dengan?;Bilangan Kompleks
-d5;Asisten digital yang disediakan oleh Apple bernama?;Siri
-d6;Processor Cyrix 486SLC adalah processor pada generasi ke?;Generasi ke-4
-e2;Diketahui : <br>P = { x | 5 < x < 25,  x ⋲ bilangan prima }<br>Q = { x | 4 < x < 14,  x ⋲ bilangan ganjil }<br>Maka tentukanlah anggota dari A ∩ B?;A ∩ B = {7,11,13}
-e3;Tentukan banyaknya Permutasi yang terjadi jika akan disusun tiga huruf yang diambil dari abjad A,B,C,D,E!;60
-e4;Bagian dari CPU yang berfungsi untuk menangani masalah perhitungan aritmatika dan proses angka adalah?;ALU
-e5;Cabang teknologi yang berhubungan dengan desain, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot adalah?;Robotika
-e6;Pada tahun berapakah generasi komputer yang ketiga dimulai?;1964
-f2;Alat yang memiliki fungsi ganda yaitu sebagai input dan output disebut?;Terminal
-f3;Pada tahun berapa World Wide Web (WWW) diperkenalkan kepada publik?;1993
-f4;Secara default, Quick acces toolbar pada Microsoft Word berisi ikon?;Save, Undo, dan Redo
-f5;Komputer diambil dari kosa kata “To compute”. Kata tersebut diambil dari bahasa?;Bahasa inggris
-f6;Setelah proses instalasi selesai, apa yang perlu dilakukan sebelum dapat menggunakan Linux?;Reboot
+a1;Cabang pembelajaran machine learning yang bekerja dengan jaringan saraf tiruan yang dalam, yang dirancang untuk meniru cara manusia berpikir dan belajar adalah…;Deep Learning
+a2;Teknik pengaman data yang dilakukan dengan cara memfilter arus komunikasi yang masuk dan keluar dikenal dengan istilah…;Firewall
+a3;START pseudocode<br><br>SET n = 5<br>SET fibonacci1 = 0<br>SET fibonacci2 = 1<br><br>DISPLAY fibonacci1<br><br>FOR i = 2 TO n<br>SET fibonacci = fibonacci1 + fibonacci2<br>DISPLAY fibonacci<br>SET fibonacci1 = fibonacci2<br>SET fibonacci2 = fibonacci<br>ENDFOR<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;0, 1, 1, 2, 3 
+a4;Sembilan titik terletak pada bidang datar sehingga tidak ada tiga titik yang segaris. Banyak segitiga yang dapat dibuat dengan titik-titik sudut dari titik-titik tersebut adalah...;84 cara
+a5;Perintah pada linux yang digunakan untuk mengubah hak akses atau izin baca, tulis dan eksekusi pada suatu file adalah?;chmod
+b1;Teknologi yang menggabungkan benda maya dua dimensi dan ataupun tiga dimensi ke dalam sebuah lingkungan nyata lalu memproyeksikan benda-benda maya tersebut secara realistis ke dunia nyata secara real-time disebut…;Augmented Reality (AR)
+b2;Program yang berfungsi untuk memonitor jaringan dan menangkap paket data yang melewati jaringan disebut…;Sniffer
+b3;START pseudocode<br><br>SET n = 10<br>SET sum = 0<br><br>FOR i = 1 TO n<br>IF i % 2 == 0 THEN<br>SET sum = sum + i<br>ENDIF<br>ENDFOR<br><br>DISPLAY sum<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;30 
+b4;Terdapat 5 calon pengurus HIMA, dari kelima calon tersebut akan dipilih untuk menduduki posisi Ketua, Sekretaris, dan Bendahara HIMA. Banyaknya cara untuk menyusun pengurus HIMA adalah?;10
+b5;Perintah pada linux selain wget yang digunakan untuk mengunduh file dari internet melalui protokol HTTP, HTTPS, dan FTP adalah?;curl 
+c1;Metode penyampaian berbagai layanan seperti penyimpanan data, server, database, jaringan, dan perangkat lunak melalui internet disebut…;Cloud Computing atau Komputasi Awan
+c2;Software yang bersifat paten dan tidak dapat dilakukan modifikasi atau dikembangkan walaupun ada masalah dalam fungsinya disebut?;Firmware
+c3;START pseudocode<br><br>SET n = 10<br>SET sum = 0<br><br>FOR i = 1 TO n<br>IF i % 3 == 0 OR i % 5 == 0 THEN<br>SET sum = sum + i<br>ENDIF<br>ENDFOR<br><br>DISPLAY sum<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;33 
+c4;Ada 5 pasangan finalis dalam suatu ruangan. Jika masing-masing finalis belum saling mengenal kecuali dengan pasangannya dan mereka berjabat tangan dengan setiap orang yang belum mereka kenal, maka terjadi jabat tangan sebanyak...;40
+c5;Perintah pada linux yang digunakan untuk mengubah kepemilikan file pengguna dan grup dari suatu file atau direktori adalah?;chown
+d1;Metode perlindungan informasi dan komunikasi melalui penggunaan kode, sehingga hanya orang yang dituju yang dapat membaca dan memproses informasi tersebut disebut…;Kriptografi
+d2;Kapasitas maksimal jalur komunikasi untuk melakukan proses pengiriman dan penerimaan data dalam satuan waktu tertentu adalah?;Bandwidth
+d3;START pseudocode<br><br>SET n = 6<br>SET factorial = 1<br><br>FOR i = 1 TO n<br>SET factorial = factorial * i<br>ENDFOR<br><br>DISPLAY factorial<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;720 (benar)
+d4;Suatu gedung mempunyai 5 pintu masuk. Jika tiga orang hendak memasuki gedung itu, maka banyaknya cara mereka masuk dari pintu yang berlainan adalah...;60
+d5;Perintah pada linux yang digunakan untuk mengakses komputer jarak jauh melalui koneksi jaringan yang aman dan terenkripsi adalah?;ssh 

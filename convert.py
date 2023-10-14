@@ -1,6 +1,8 @@
 import pandas as pd
 import random
 import string
+import csv
+
 def convert(template):
     
     soal = template
@@ -8,7 +10,7 @@ def convert(template):
     all_question_ids = [f"{letter}{number}" for letter in 'abcdef' for number in range(1, 7)]
 
     # Read the data from template.csv with a semicolon separator
-    df = pd.read_csv(template, sep=";")
+    df = pd.read_csv(template, sep=";", quoting=csv.QUOTE_NONE)
 
     # Check if the number of rows matches the number of possible question_id combinations
     if len(df) != len(all_question_ids):
@@ -23,18 +25,14 @@ def convert(template):
     # Reorder the columns
     df = df[['question_id', 'question', 'answer']]
 
-    # Write the randomized data to a new CSV file with a semicolon separator
-    df.to_csv(soal, index=False, sep=";")
+    # Write the randomized data to a new CSV file with a semicolon separator and no quoting
+    df.to_csv(soal, index=False, sep=";", quoting=csv.QUOTE_NONE)
 
-    # Read the data from soal.csv with a semicolon separator
-    df = pd.read_csv(soal, sep=";")
+    # Read the data from soal.csv with a semicolon separator and no quoting
+    df = pd.read_csv(soal, sep=";", quoting=csv.QUOTE_NONE)
 
     # Sort the data by question_id in ascending order
     df = df.sort_values(by='question_id')
 
-    # Write the sorted data to a new CSV file with a semicolon separator
-
-    df = df.sort_values(by='question_id')
-
-    # Write the sorted data to a new CSV file
-    df.to_csv(soal, index=False,sep=";")
+    # Write the sorted data to a new CSV file with a semicolon separator and no quoting
+    df.to_csv(soal, index=False, sep=";", quoting=csv.QUOTE_NONE)
