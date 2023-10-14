@@ -1,37 +1,37 @@
 question_id;question;answer
-a1;Perangkat Keras Komputer yang merupakan otak dari sebuah komputer yang mengontrol seluruh proses di komputer adalah?;Prosesor
-a2;Antarmuka teks atau grafis yang digunakan oleh pengguna untuk berinteraksi dengan sistem operasi Linux adalah?;Shell
-a3;Formula pada Microsoft Excel untuk menghitung berapa banyak data maupun argumen yang berupa angka pada sekumpulan cell atau range adalah?;COUNT
-a4;START pseudocode<br><br>SET a = 5<br>SET b = 2<br>SET c = a + b<br>SET d = a - b<br>DISPLAY c, d<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;c=7, d=3
-a5;Simbol atau lambang yang digunakan untuk mewakili suatu bilangan disebut?;Angka
-a6;DEKLARASI<br>i 	: integer<br>sum : integer<br>Begin<br>i ← 0<br>sum ← 5<br>While(i < 5)<br>sum ← sum + i <br>i ← i + 1<br>endwhile<br>end<br>Output dari algoritma di atas adalah?;15
-b1;Ada berapa lapisan yang terdapat pada OSI layer?;7 
-b2;Berapa jumlah tabung vakum yang digunakan pada komputer ENIAC?;18.000
-b3;Untuk mengetahui apakah komputer dalam jaringan sudah terhubung dengan komputer lain digunakan perintah?;Ping 
-b4;Aplikasi pengolah angka bawaan dari macOS bernama?;Numbers
-b5;Pada generasi komputer ke-2, terjadi penggunaan komponen utama berupa?;Transistor
-b6;Jika A1 berisi nilai 70 dan pada sel B1 berisi formula =IF(A1>=70,”LULUS”,”TIDAK LULUS”), maka hasil yang didapat pada B1 adalah?;LULUS
-c1;Komputer pada generasi kedua menggantikan bahasa mesin dengan bahasa?;Bahasa Assembly 
-c2;Istilah yang digunakan untuk halaman pada Microsoft Excel disebut dengan?;Sheet
-c3;Untuk menyimpan suatu file dalam Microsoft Word, nama file maksimum berisi berapa karakter?;254
-c4;Sistem bilangan yang memiliki 10 simbol angka adalah ?;Desimal
-c5;"Siapakah tokoh yang dianggap sebagai ""Bapak Komputer""?";Charles Babbage
-c6;DEKLARASI<br>i : integer<br>DESKRIPSI<br>for i ← 3 to 5 do<br>write(i+2)<br>endfor<br>Output dari algoritma tersebut adalah?;5 6 7 
-d1;Proses pengaturan urutan eksekusi program atau proses dalam sistem komputer disebut?;scheduling
-d2;C++, Basic  dan Java merupakan bahasa pemrograman tingkat?;Tinggi
-d3;Negara yang mempelopori perkembangan komputer generasi kelima adalah?;Jepang 
-d4;Himpunan bilangan real dan imajiner tersebut disebut dengan?;Bilangan Kompleks
-d5;Asisten digital yang disediakan oleh Apple bernama?;Siri
-d6;Processor Cyrix 486SLC adalah processor pada generasi ke?;Generasi ke-4
-e1;Berapa nilai dari 27 mod 3?;0 
-e2;Diketahui : <br>P = { x | 5 < x < 25,  x ⋲ bilangan prima }<br>Q = { x | 4 < x < 14,  x ⋲ bilangan ganjil }<br>Maka tentukanlah anggota dari A ∩ B?;A ∩ B = {7,11,13}
-e3;Tentukan banyaknya Permutasi yang terjadi jika akan disusun tiga huruf yang diambil dari abjad A,B,C,D,E!;60
-e4;Bagian dari CPU yang berfungsi untuk menangani masalah perhitungan aritmatika dan proses angka adalah?;ALU
-e5;Cabang teknologi yang berhubungan dengan desain, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot adalah?;Robotika
-e6;Pada tahun berapakah generasi komputer yang ketiga dimulai?;1964
-f1;Tahun berapa HTML 1.0 dirilis?;1993
-f2;Alat yang memiliki fungsi ganda yaitu sebagai input dan output disebut?;Terminal
-f3;Pada tahun berapa World Wide Web (WWW) diperkenalkan kepada publik?;1993
-f4;Secara default, Quick acces toolbar pada Microsoft Word berisi ikon?;Save, Undo, dan Redo
-f5;Komputer diambil dari kosa kata “To compute”. Kata tersebut diambil dari bahasa?;Bahasa inggris
-f6;Setelah proses instalasi selesai, apa yang perlu dilakukan sebelum dapat menggunakan Linux?;Reboot
+a1;Pada Microsoft Word menu yang digunakan untuk menyisipkan berbagai elemen seperti gambar, tabel, grafik, tautan dan objek ke dalam dokumen disebut dengan…;Insert
+a2;Jenis jaringan yang digunakan untuk menghubungkan perangkat dalam area jangkauan geografis yang sangat terbatas, seperti ruang kelas atau laboratorium komputer adalah?;Local Area Network (LAN)
+a3;Lapisan pada OSI Layer yang berfungsi untuk mendefinisikan media transmisi jaringan, sinkronisasi bit, arsitektur jaringan (seperti Ethernet), topologi jaringan dan pengkabelan adalah?;Physical Layer
+a4;START pseudocode<br><br>SET d1 = 8<br>SET d2 = 4<br>SET luas = ½ * d1 * d2<br>DISPLAY luas<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;16
+a5;Jenis sistem bilangan yang menggunakan 10 digit atau menggunakan basis 10 untuk pembuatan angka adalah…;Desimal
+a6;START pseudocode<br><br>SET a = 5<br>SET b = 2<br>SET c = a + b<br>SET d = a - b<br>DISPLAY c, d<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;7, 3
+b1;Hasil konversi bilangan biner 01100011  ke dalam bentuk desimal yaitu?;99
+b2;Hasil konversi bilangan biner 10110100  ke dalam bentuk heksadesimal yaitu?;B4
+b3;Komponen yang berfungsi sebagai tempat penyimpanan sementara untuk data dan program yang sedang digunakan oleh komputer adalah?;RAM
+b4;Shortcut pada Microsoft Word yang digunakan untuk meratakan teks dari kiri ke kanan atau justify adalah?;CTRL + J
+b5;Tag HTML yang digunakan untuk membuat hyperlink ke halaman web lain adalah?;<a>
+b6;START PSEUDOCODE<br><br>SET bil = 928<br><br>IF bil mod 2 = 0 THEN<br>DISPLAY “Genap”<br>ELSE<br>DISPLAY “Ganjil”<br>ENDIF<br><br>END PSEUDOCODE<br>Apakah output dari pseudocode diatas?;Genap
+c1;Bahasa pemrograman yang dibuat oleh JetBrains pada tahun 2011 dan dijalankan pada Java Virtual Machine (JVM) adalah…;Kotlin
+c2;Tentukan banyaknya Permutasi yang terjadi jika akan disusun tiga huruf yang diambil dari abjad A,B,C,D,E!;60
+c3;<img class='d-flex' src='static/soalgambar/soal1.png'>;11
+c4;Komputer atau sistem yang menyediakan sumber daya, data, layanan, atau program ke komputer lain, yang dikenal sebagai klien, melalui jaringan adalah…;Server / Komputer Server
+c5;Formula pada Microsoft Excel untuk menghitung berapa banyak data angka/numerik pada sekumpulan cell atau range adalah?;COUNT
+c6;Sistem Operasi berbasis linux yang dirancang khusus untuk perangkat mobile seperti smartphone dan tablet adalah?;Android
+d1;Dalam ekstensi gambar dikenal dengan istilah JPEG. Apa kepanjangan dari JPEG?;Joint Photographic Expert Group
+d2;Tentukan hasil perhitungan dari 98 mod 5!;3
+d3;Perintah yang digunakan di linux untuk melihat daftar file dan folder dalam sistem file adalah…;ls
+d4;Sebuah perangkat lunak dari Microsoft untuk melindungi sistem operasi Microsoft Windows dari perangkat pengintai atau spyware adalah…;Windows Defender
+d5;Cabang teknologi yang berhubungan dengan desain, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot adalah?;Robotics atau Robotika
+d6;Perintah yang digunakan di linux untuk memindahkan sebuah file atau folder dari satu lokasi ke lokasi lain adalah…;mv
+e1;Tentukan KPK dari 7, 14 dan 21!;42
+e2;Hasil konversi bilangan heksadesimal FF(16) ke dalam bentuk biner yaitu?;11111111
+e3;START PSEUDOCODE<br><br>SET a = 8<br>SET b = 3<br>SET hasil =  0<br><br>IF a > b THEN<br>SET hasil = a * b<br>ELSE<br>SET hasil = b - a<br>ENDIF<br><br>DISPLAY hasil<br><br>END PSEUDOCODE<br>Apakah output dari pseudocode diatas?;24
+e4;Formula pada Microsoft Excel yang digunakan untuk mencari angka terendah di dalam suatu deretan data adalah?;MIN
+e5;Jenis topologi yang setiap komponen dihubungkan langsung ke simpul pusat (central point) sehingga memudahkan dalam deteksi kesalahan disebut dengan?;Topologi Star atau Topologi Bintang
+e6;Apa kepanjangan dari ISP dalam konteks jaringan?;Internet Service Provider
+f1;Tag HTML yaang digunakan untuk membuat teks miring adalah?;<i>
+f2;Komponen utama yang digunakan pada komputer generasi pertama adalah?;Tabung Vakum atau Vacuum Tube
+f3;Berapa banyak subhimpunan yang dapat dibentuk dari himpunan {A, B, C}?;2^3 = 8
+f4;<img class='d-flex' src='static/soalgambar/soal2.png'>;2
+f5;Tools pada Photoshop yang memiliki fungsi memindahkan objek baik berupa gambar atau teks dengan mengarahkan kursor ke objek yang ingin dipindahkan adalah…;Move Tool
+f6;Shortcut pada Microsoft Word untuk menutup dokumen yang sedang dibuka adalah?;CTRL + W

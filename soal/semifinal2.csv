@@ -1,0 +1,21 @@
+id;question;answer
+a1;Benar atau Salah Pada Microsoft Word, Fungsi untuk membuat dan mengatur header & footer terdapat di menu Layout;SALAH (Insert)
+a2;Benar atau Salah Ekstensi file default yang digunakan aplikasi WordPad adalah .txt;SALAH (.rtf)
+a3;Benar atau Salah Gottfried Leibniz adalah ilmuwan yang menemukan konsep sistem biner yang digunakan dalam komputer modern;BENAR
+a4;Benar atau Salah Dalam jaringan komputer, layer ke 4 pada sistem OSI model adalah Transport Layer;BENAR
+a5;Benar atau Salah fungsi AND akan mengembalikan nilai TRUE, jika salah satu pernyataan ada yang bernilai False;SALAH (jika hanya salah satu pernyataan yang benar, maka operator and akan memberikan nilai keluaran FALSE)
+a6;Benar atau Salah Laravel adalah framework web yang berbasis bahasa pemrograman PHP;BENAR
+a7;Benar atau Salah Bilangan biner 00011110 jika diubah ke dalam bilangan hexadesimal menjadi 1D;SALAH (1E)
+a8;Benar atau Salah Simbol % (persen) pada keyboard terletak bersamaan dengan tombol angka 5;BENAR
+a9;Benar atau Salah Perintah dasar pada Linux dalam CLI yang digunakan untuk menghentikan suatu proses/instruksi adalah Clear;SALAH (Kill)
+a10;Benar atau Salah Jumlah kabel bagian dalam kabel UTP adalah 8 bagian;BENAR
+e1;Fitur pada Microsoft Excel yang digunakan untuk mengumpulkan dan mengelompokkan data berdasarkan parameter tertentu sesuai kebutuhan, tanpa perlu menggunakan penulisan rumus atau untuk menghitung, meringkas, dan menganalisis data yang memungkinkan Anda melihat perbandingan, pola, dan tren dalam data Anda. disebut…;PIVOT TABLE / TABEL PIVOT
+e2;Berapa hasil penjumlahan bilangan heksadesimal 4C dengan bilangan desimal 22 dalam bentuk bilangan biner?;0110 0010
+e3;Sebuah layer pada OSI Layer yang memiliki fungsi utama untuk mengelola dan memelihara koneksi antara dua perangkat yang berkomunikasi dalam jaringan ialah…;SESSION LAYER
+e4;Bahasa pemrograman yang pertama kali dikembangkan pada tahun 1959 oleh komite CODASYL (Conference on Data System Languages) dan dirancang khusus untuk aplikasi bisnis dan pengolahan data adalah…;COBOL (Common Business-Oriented Language)
+e5;Platform perangkat lunak komprehensif yang menggabungkan tugas-tugas seperti pengembangan kode, pembuatan, debugging, dan pengujian dalam satu aplikasi atau kerangka kerja disebut…;IDE (Integrated Development Environment)
+e6;Berapa banyak cara untuk menggambar garis lurus yang menghubungkan 2 titik dari 8 titik yang terletak di lingkaran?;28   => 8C2 = 8! / (2! * (8 - 2)!) <=
+e7;START PSEUDOCODE<br><br>SET N = 6<br>SET hasil = 1<br>FOR i = 1 to N<br>SET hasil = hasil * i<br>ENDFOR<br><br>DISPLAY hasil<br><br>END PSEUDOCODE<br>Apakah output dari pseudocode di atas?;720
+e8;Komponen inti dari sistem operasi yang bertanggung jawab atas manajemen sumber daya perangkat keras (hardware) dan tugas-tugas dasar sistem adalah…;KERNEL
+e9;Istilah yang digunakan dalam konteks jaringan komputer dan komunikasi untuk mengukur kapasitas maksimum jaringan dalam hal mentransfer data yang ditentukan dalam hitungan bit per second (bps) adalah…;BANDWITH
+e10;Platform komputasi paralel dan model aplikasi pemrograman interface (API) yang dikembangkan oleh NVIDIA yang memungkinkan perangkat lunak menggunakan GPU-nya dikenal dengan nama…;CUDA (Compute Unified Device Architecture)
