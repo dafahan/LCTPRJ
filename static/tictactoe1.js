@@ -38,6 +38,8 @@ let correct = 100;
 let wrong = 50;
 let cnt = 0;
 let mode4 = false;
+let ch = ['A', 'B', 'C', 'D'];
+let clr = ['red','blue','yellow','green'];
 {// Team A
 
     

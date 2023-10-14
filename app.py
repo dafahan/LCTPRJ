@@ -1,7 +1,9 @@
 import sys
-from flask import Flask, render_template,send_from_directory,request,jsonify
+from flask import Flask, render_template, send_from_directory, request, jsonify
 from read import load_data
 from convert import convert
+import keyboard
+
 app = Flask(__name__, static_url_path='/static')
 app.debug = True
 
@@ -17,7 +19,16 @@ else:
     
 
 soal, jawaban = load_data(filepath)
+retrieved_keys = set()
 
+def retrieve():
+     with open('output.txt', 'w', encoding='utf-8') as output_file:
+            output_file.write("soal:\n")
+            for item in soal :
+                if item not in retrieved_keys:
+                    output_file.write(f"{item};{soal[item]};{jawaban[item]}\n")
+
+     
 #C:\xampp\htdocs\prototypelct\readcsv.py
 
 @app.route('/timeUp.mp3')
@@ -30,6 +41,8 @@ def get_soal_jawaban():
     print(kodeSoal)
     quest = soal[kodeSoal]
     ans = jawaban[kodeSoal]
+    retrieved_keys.add(kodeSoal)
+    retrieve()
     return jsonify({'soal': quest, 'jawaban': ans})
 
 @app.route('/lct')

@@ -12,6 +12,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <style type="text/css">
+    #que img{
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
     .container-soal{
       margin-top: 10vh;
       width: 50vw;
@@ -201,7 +206,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
    <script type="text/javascript">
-
+    let soalShown = false;
     //DEV DEBUG !!!
      // sesi = 2;
       mode4 = true;
@@ -587,7 +592,13 @@
 
         }
         function reveal1(){
-          if(que.innerHTML!='Pertanyaan')timerStart();  
+          if(que.innerHTML!='Pertanyaan' && !soalShown){ 
+            timerStart(); 
+            soalShown = true;
+          }
+          else if(soalShown){
+            countdown = ((countdown == 1)? 0:1);  
+          }
                  que.innerHTML = '<h1>'+question+'</h1>';
                  console.log(question);
                  document.getElementById('ans').innerHTML = "(Jawaban)";
@@ -599,6 +610,7 @@
                             ans.innerHTML = '<h2>'+answer+'</h2>';
                             };
         function closeSoal(){
+          soalShown = false;
           if(sesi==3)lelang.value = '';
             boxQue.innerHTML = 'Pertanyaan';
                 boxAns.innerHTML = '';

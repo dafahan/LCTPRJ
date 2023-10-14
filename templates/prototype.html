@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <style type="text/css">
+    #que img{
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
   	.question>div>h1{
   		font-size: 25px;
   	}
@@ -57,7 +62,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         function reveal1(que){
-            que.innerHTML = "<h1>Fungsi yang digunakan untuk menghitung hasil sisa pembagian pada Microsoft Excel adalah?</h1>";
+            que.innerHTML = `<img class="d-flex" src="{{ url_for('static', filename='soalgambar/soal1.png') }}">`;
             document.getElementById('ans').innerHTML = "(Jawaban)";
         };
         function reveal2(ans){

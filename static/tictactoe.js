@@ -39,6 +39,7 @@ let cnt = 0;
 let curI = null;
 let ch = ['A', 'B', 'C', 'D'];
 let clr = ['red','blue','yellow','green'];
+
         let curJ = null;
         let tmp = []
         let mode4 = false;

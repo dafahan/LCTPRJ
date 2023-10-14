@@ -13,6 +13,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <style type="text/css">
+    #que img{
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
     .modal-title{
         margin:auto;
         font-weight: bold;
@@ -414,7 +419,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        
+        let soalShown = false;
     //DEV DEBUG !!!
      // sesi = 2;
       mode4 = true;
@@ -601,20 +606,37 @@
              tmpB = 0;
              tmpC = 0;
              tmpD = 0;
-            for (let i = 0; i < matrix.length; i++) {
-              let row = matrix[i];
-              let firstValue = row[0];
-              if(firstValue != -1){
-                  let isRowSame = row.every(element => element === firstValue);
-                  
-                  if (isRowSame) {
-                    if(firstValue == 0 )tmpA++;
-                    if(firstValue == 1)tmpB++;
-                    if(firstValue == 2)tmpC++;
-                    if(firstValue == 3)tmpD++;
-                    console.log('Row', i, 'has same value:', firstValue);
-                  }
+          for(let i=0;i<6;i++){
+            let sameRow = true;
+            if(blocks[i][0].style.background=='none')continue
+            let firstValue = blocks[i][0].style.background;
+            console.log(firstValue);
+            for(let j=0;j<6;j++){
+                if(blocks[i][j].style.background != firstValue) sameRow = false;
+            }
+            if(sameRow){
+                
+                let num = ch.indexOf(firstValue);
+                let exe = "tmp"+ch[num]+"++";
+                eval(exe);
                 }
+                console.log("Y");
+            }
+            
+            sameRow = true;
+            for(let i=0;i<6;i++){
+            
+            if(blocks[0][i].style.background=='none')continue
+            let firstValue = blocks[0][i].style.background;
+            for(let j=0;j<6;j++){
+                if(blocks[j][i].style.background != firstValue) sameRow = false;
+            }
+            if(sameRow){
+                let num = arr.findIndex(firstValue);
+                let exe = "tmp"+ch[num]+"++";
+                eval(exe);
+                }
+                console.log("Y");
             }
 
             // Check if any column has the same value in all elements
@@ -679,7 +701,13 @@
 
         }
         function reveal1(){
-          if(que.innerHTML!='Pertanyaan')timerStart();  
+          if(que.innerHTML!='Pertanyaan' && !soalShown){ 
+            timerStart(); 
+            soalShown = true;
+          }
+          else if(soalShown){
+            countdown = ((countdown == 1)? 0:1);  
+          }
                  que.innerHTML = '<h1>'+question+'</h1>';
                  console.log(question);
                  document.getElementById('ans').innerHTML = "(Jawaban)";
@@ -691,6 +719,7 @@
                             ans.innerHTML = '<h2>'+answer+'</h2>';
                             };
         function closeSoal(){
+            soalShown = false;
             updateLabelBorders();
             timerFinish();
             const btnA = document.getElementById("btnA");
