@@ -149,32 +149,16 @@
 <br>
 
     <div class="container-soal container d-flex justify-content-center align-items-center flex-column">
-      <div class="sesi soal-paket d-flex flex-row">
-        <div class="paket"><a  class="block" id = 'a' target="_blank">
-          <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
-              A
-          </button>
+
+        <div class="sesi soal-lelang"><a  class="block" id = 'a' target="_blank">
+          
+        <a  class="block" id = 'a' target="_blank" style="width: 100%;">
+            <button class="btn-custom1" data-toggle="modal" data-target="#quizModal">
+              TRUE / FALSE
+            </button>
         </a>
-     </div>
-      <div class="paket"><a  class="block" id = 'b' target="_blank">
-        <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
-            B
-        </button>
-      </a>
-  </div>
-    <div class="paket"><a  class="block" id = 'c' target="_blank">
-      <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
-          C
-      </button>
-    </a>
-  </div>
-  <div class="paket"><a  class="block" id = 'd' target="_blank">
-    <button class="btn-custom" data-toggle="modal" data-target="#quizModal">
-        D
-    </button>
-  </a>
 </div>
-      </div>
+      
       <div class="sesi soal-lelang" >
        
         <a  class="block" id = 'e' target="_blank" style="width: 100%;">
@@ -183,14 +167,7 @@
           </button>
       </a>
       </div>
-    
-      <div class="sesi soal-rebutan" >
-        <a  class="block" id = 'f' target="_blank" style="width: 100%;">
-          <button class="btn-custom1" data-toggle="modal" data-target="#quizModal">
-              LELANG
-          </button>
-      </a>
-      </div>
+
     </div>
    
     
@@ -308,8 +285,8 @@
           blocks[i].addEventListener('click',(e)=>{
             blocknow = blocks[i];
             
-            blocknow.innerHTML = ((i<4)?"<button class='btn-custom marked' style='background: black;' >A</button>": "<button class='btn-custom1 marked' style='background: black;' >A</button>");
-            if(sesi==2){
+            blocknow.innerHTML = ((i<4)?"<button class='btn-custom1 marked' style='background: black;' >A</button>": "<button class='btn-custom1 marked' style='background: black;' >A</button>");
+            if(sesi==2 || sesi == 1){
               wrong = 50;
               cw.style.display = 'none';
               rebutan.style.display='inline-flex';
@@ -470,7 +447,7 @@
 
 
         next.addEventListener('click',()=>{
-         
+          timerFinish();
           for(let i=0;i<modalbtn.length;i++){
             if(modalbtn[i].style.background == 'black'){
               if(i==0)storedScoreA -= wrong;
@@ -517,7 +494,7 @@
           btnD.style.fontWeight = "bold";
            timerPrepare();
     
-          let titleSoal = document.getElementsByClassName('modal-title')[0]
+          let titleSoal = turnSoal;
           
           kodeSoal = ""+kode+turnSoal;
           console.log(kodeSoal);

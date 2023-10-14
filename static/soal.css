@@ -1,0 +1,172 @@
+body{
+    height: 100vh;
+}
+.tic{
+    margin: auto;
+    font-size: 30px;
+    
+}
+
+.btn-custom{
+    width: 75px;
+    height: 75px;
+    font-weight:700;
+}
+
+.cs-center{
+    margin: auto;
+    text-align: center;
+}
+
+.round-b{
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.logo-kiri{
+    position: fixed;
+    height: 76px;
+}
+.logo-kiri>img{
+    height: inherit;
+}
+
+.logo-kanan{
+    right: 0pt;
+    position: fixed;
+    height: 76px;
+}
+.logo-kanan>img{
+    margin: 3px;
+    height: inherit;
+}
+.cs_title{
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.btn-custom1{
+  
+    width: 300px;
+    height: 75px;
+    font-weight:700;
+
+}
+.q-num{
+    border-right: 5px solid black;
+    text-align: center;
+    font-size: 100px;
+}
+
+.ans-container{
+    text-align: center;
+}
+
+#ans{
+    width: fit-content;
+    margin: auto;
+    color: darkred;
+}
+
+#ans:hover{
+    cursor: pointer;
+}
+
+#ans > h2{
+    color: darkredx;
+}
+
+#que:hover{
+    cursor: pointer;
+}
+
+.btn-home{
+    border-right: 3px solid rgb(1, 1, 80);
+    padding: 15px;
+}
+
+.btn-home > svg{
+    cursor: pointer;
+}
+
+canvas {
+    background: transparent;
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    left: 0;
+    right: 0;
+    border: solid 1px black;
+    border-radius: 10px;
+}

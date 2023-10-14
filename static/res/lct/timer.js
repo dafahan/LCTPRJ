@@ -1,3 +1,5 @@
+let timerRun = false;
+let countdown = 1;
 {// Timer
 
 let time = document.getElementById("seconds");
@@ -13,13 +15,14 @@ let count = 1000;
 let interval;
 let strTime;
 let repeatSound,  soundCounter = 12;
-//let isPause = false;
 
+//let isPause = false;
 function timerStart(){
+    timerRun = true;
     interval = setInterval(() => {
         
         if (count > 0) {
-            count--;
+            count-=countdown;
             strTime = count.toString();
           //  if(isPause)clearInterval(interval);
             if (count >= 10000) {
@@ -63,10 +66,12 @@ function timerStart(){
 }
 
 function timerFinish(){
+    timerRun = false;
     clearInterval(interval);
     
 }
 function timerPrepare(){
+   
     count = 1000;
     soundCounter = 12;
     interval;
