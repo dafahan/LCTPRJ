@@ -1,21 +1,19 @@
 soal:
-a1;Cabang pembelajaran machine learning yang bekerja dengan jaringan saraf tiruan yang dalam, yang dirancang untuk meniru cara manusia berpikir dan belajar adalah…;Deep Learning
-a2;Teknik pengaman data yang dilakukan dengan cara memfilter arus komunikasi yang masuk dan keluar dikenal dengan istilah…;Firewall
-a3;START pseudocode<br><br>SET n = 5<br>SET fibonacci1 = 0<br>SET fibonacci2 = 1<br><br>DISPLAY fibonacci1<br><br>FOR i = 2 TO n<br>SET fibonacci = fibonacci1 + fibonacci2<br>DISPLAY fibonacci<br>SET fibonacci1 = fibonacci2<br>SET fibonacci2 = fibonacci<br>ENDFOR<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;0, 1, 1, 2, 3 
-a4;Sembilan titik terletak pada bidang datar sehingga tidak ada tiga titik yang segaris. Banyak segitiga yang dapat dibuat dengan titik-titik sudut dari titik-titik tersebut adalah...;84 cara
-a5;Perintah pada linux yang digunakan untuk mengubah hak akses atau izin baca, tulis dan eksekusi pada suatu file adalah?;chmod
-b1;Teknologi yang menggabungkan benda maya dua dimensi dan ataupun tiga dimensi ke dalam sebuah lingkungan nyata lalu memproyeksikan benda-benda maya tersebut secara realistis ke dunia nyata secara real-time disebut…;Augmented Reality (AR)
-b2;Program yang berfungsi untuk memonitor jaringan dan menangkap paket data yang melewati jaringan disebut…;Sniffer
-b3;START pseudocode<br><br>SET n = 10<br>SET sum = 0<br><br>FOR i = 1 TO n<br>IF i % 2 == 0 THEN<br>SET sum = sum + i<br>ENDIF<br>ENDFOR<br><br>DISPLAY sum<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;30 
-b4;Terdapat 5 calon pengurus HIMA, dari kelima calon tersebut akan dipilih untuk menduduki posisi Ketua, Sekretaris, dan Bendahara HIMA. Banyaknya cara untuk menyusun pengurus HIMA adalah?;10
-b5;Perintah pada linux selain wget yang digunakan untuk mengunduh file dari internet melalui protokol HTTP, HTTPS, dan FTP adalah?;curl 
-c1;Metode penyampaian berbagai layanan seperti penyimpanan data, server, database, jaringan, dan perangkat lunak melalui internet disebut…;Cloud Computing atau Komputasi Awan
-c2;Software yang bersifat paten dan tidak dapat dilakukan modifikasi atau dikembangkan walaupun ada masalah dalam fungsinya disebut?;Firmware
-c3;START pseudocode<br><br>SET n = 10<br>SET sum = 0<br><br>FOR i = 1 TO n<br>IF i % 3 == 0 OR i % 5 == 0 THEN<br>SET sum = sum + i<br>ENDIF<br>ENDFOR<br><br>DISPLAY sum<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;33 
-c4;Ada 5 pasangan finalis dalam suatu ruangan. Jika masing-masing finalis belum saling mengenal kecuali dengan pasangannya dan mereka berjabat tangan dengan setiap orang yang belum mereka kenal, maka terjadi jabat tangan sebanyak...;40
-c5;Perintah pada linux yang digunakan untuk mengubah kepemilikan file pengguna dan grup dari suatu file atau direktori adalah?;chown
-d1;Metode perlindungan informasi dan komunikasi melalui penggunaan kode, sehingga hanya orang yang dituju yang dapat membaca dan memproses informasi tersebut disebut…;Kriptografi
-d2;Kapasitas maksimal jalur komunikasi untuk melakukan proses pengiriman dan penerimaan data dalam satuan waktu tertentu adalah?;Bandwidth
-d3;START pseudocode<br><br>SET n = 6<br>SET factorial = 1<br><br>FOR i = 1 TO n<br>SET factorial = factorial * i<br>ENDFOR<br><br>DISPLAY factorial<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;720 (benar)
-d4;Suatu gedung mempunyai 5 pintu masuk. Jika tiga orang hendak memasuki gedung itu, maka banyaknya cara mereka masuk dari pintu yang berlainan adalah...;60
-d5;Perintah pada linux yang digunakan untuk mengakses komputer jarak jauh melalui koneksi jaringan yang aman dan terenkripsi adalah?;ssh 
+a3;Benar atau Salah C++ adalah bahasa pemrograman yang dirancang oleh Dennis Ritchie;SALAH (Bjarne Stroustrup)
+a4;Benar atau Salah Network layer termasuk ke dalam lower layer di OSI layer;BENAR
+a5;Benar atau Salah Apabila ada dua buah operand yang memiliki nilai 0 (false) dan 1 (true), diberikan operator OR maka akan menghasilkan output 1 (true);BENAR
+a6;Benar atau Salah Flutter merupakan sebuah framework yang dikembangkan oleh Google untuk aplikasi Mobile?;BENAR
+a7;Benar atau Salah Bilangan heksadesimal C jika diubah ke dalam bilangan desimal menjadi 13;SALAH (12)
+a8;Benar atau Salah Simbol - (strip) pada keyboard terletak bersamaan dengan tombol simbol = (sama dengan);SALAH (simbol + terletak bersamaan tombol simbol =)
+a9;Benar atau Salah Perintah “pwd” pada Linux adalah singkatan dari Private Working Directory;SALAH (Print Working Directory)
+a10;Benar atau Salah Subnet mask 255.255.255.0 termasuk kedalam ip kelas C;BENAR
+e1;Fungsi yang dapat digunakan dalam Microsoft Excel untuk menghilangkan ruang kosong atau spasi yang tidak dibutuhkan pada sebuah teks ialah…;TRIM
+e2;Berapa hasil perkalian bilangan 2D₁₆ dengan 24₈ dalam bentuk bilangan desimal?;900
+e3;Lapisan pada osi layer  yang digunakan untuk mendefinisikan IP address agar setiap komputer bisa saling terhubung dalam satu jaringan adalah…;NETWORK LAYER
+e4;Model komputasi sederhana yang dikembangkan pada tahun 1936 yang berfungsi sebagai model ideal untuk perhitungan matematis dan sangat penting untuk membantu memahami dasar-dasar komputasi dan menjadi dasar untuk perkembangan komputer modern ialah…;MESIN TURING / TURING MACHINE
+e5;Protokol komunikasi yang digunakan untuk mengakses perangkat penyimpanan berbasis memori flash dan mengatasi pembatasan kecepatan yang ditemui dalam protokol SATA ialah…;NVMe (Non-Volatile Memory Express)
+e6;Terdapat sebuah populasi awal adalah 500 orang. Jika populasi ini tumbuh dengan laju pertumbuhan 10% per tahun, tentukan berapa jumlah populasi setelah 3 tahun!;665 orang   => P(3)=500⋅(1+0,10)3 <=
+e7;START PSEUDOCODE<br><br>SET N = 15<br>SET total = 0<br><br>FOR i = 1 to N<br>IF i mod 2 = 1 THEN<br>SET total = total + i<br>ENDIF<br>ENDFOR<br><br>DISPLAY total<br><br>END PSEUDOCODE<br>Apakah output dari pseudocode tersebut?;64
+e8;Suatu kondisi dimana tidak ada komunikasi lagi antarproses di dalam sistem operasi yang disebabkan karena antarproses saling menunggu sumber daya yang dipegang oleh satu sama lain disebut dengan…;DEADLOCK
+e9;Sebuah teknologi yang digunakan untuk mencatat transaksi digital secara real time, berbasis cloud computing dan bersifat peer-to-peer yang dimanfaatkan salah satunya untuk transaksi cryptocurrency ialah…;BLOCKCHAIN
+e10;Large Language Model (LLM) berbasis kecerdasan buatan (AI) yang dikembangkan oleh Google adalah…;BARD / GOOGLE BARD
