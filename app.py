@@ -46,7 +46,7 @@ def get_soal_jawaban():
     retrieve()
     return jsonify({'soal': quest, 'jawaban': ans})
 
-@app.route('/lct')
+@app.route('/tictactoe')
 def lct():
 	return render_template('lct.html')
 
