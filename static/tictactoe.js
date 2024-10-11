@@ -15,18 +15,25 @@ let scoreD = document.getElementById("scoreD");
 let fieldD = document.getElementById("fieldD");
 let addD = document.getElementById("addD");
 let resetD = document.getElementById("resetD");
+let scoreE = document.getElementById("scoreE");
+let fieldE = document.getElementById("fieldE");
+let addE = document.getElementById("addE");
+let resetE = document.getElementById("resetE");
 let bonusA = 0;
 let bonusB = 0;
 let bonusC = 0;
 let bonusD = 0;
+let bonusE = 0;
 let storedScoreA = 0;
 let storedScoreB = 0;
 let storedScoreC = 0;
 let storedScoreD = 0;
+let storedScoreE = 0;
 let tmpA = 0;
 let tmpB = 0;
 let tmpC = 0;
 let tmpD = 0;
+let tmpE = 0;
 let matrix = [];
 let turn = 0;
 let quizW = document.getElementById('wrongBtn');
@@ -37,8 +44,8 @@ let correct = 100;
 let wrong = 50;
 let cnt = 0;
 let curI = null;
-let ch = ['A', 'B', 'C', 'D'];
-let clr = ['red','blue','yellow','green'];
+let ch = ['A', 'B', 'C', 'D','E'];
+let clr = ['red','blue','yellow','green','orange'];
 
         let curJ = null;
         let tmp = []
@@ -69,7 +76,7 @@ for (let i = 0; i < 6; i++) {
                 e.preventDefault();
 
                 
-                for(let x = 0;x<4;x++){
+                for(let x = 0;x<5;x++){
                     let op = matrix[i][j][x];
                     
                     let minus = 'storedScore'+ch[x]+'-=correct';
@@ -272,17 +279,18 @@ resetC.addEventListener("click", function () {
                 }
             })
         
-    fieldD.addEventListener("keyup", function (event) {
-        if (event.keyCode === 13) {
-            if (fieldC.value == '') {
-                storedScoreD += 0;
-            } else {
-                storedScoreCD+= parseInt(fieldD.value);
-            }
-            scoreD.innerHTML = storedScoreD;
-            fieldD.value = '';
-        }
-    });
+            fieldD.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    if (fieldD.value == '') {
+                        storedScoreD += 0;
+                    } else {
+                        storedScoreD += parseInt(fieldD.value);  // Corrected here
+                    }
+                    scoreD.innerHTML = storedScoreD;
+                    fieldD.value = '';
+                    event.preventDefault();  // Add this to prevent form submission or page refresh
+                }
+            });
     
     resetD.addEventListener("click", function () {
         storedScoreD = 0;
@@ -292,4 +300,51 @@ resetC.addEventListener("click", function () {
     
     
     }
+    {// Team E
+
+        let scoreE = document.getElementById("scoreE");
+        let fieldE = document.getElementById("fieldE");
+        let addE = document.getElementById("addE");
+        let resetE = document.getElementById("resetE");
+        
+        
+                quizC.addEventListener("click",function(e){
+                    if(turn==4){
+                        storedScoreE += correct;
+                        scoreE.innerHTML = storedScoreE;
+                        event.preventDefault();
+                    }
+                })
+                quizW.addEventListener("click",function(e){
+                    if(turn==4){
+                        storedScoreE -= wrong;
+                        scoreE.innerHTML = storedScoreE;
+                        event.preventDefault();
+                    }
+                })
+            
+                fieldE.addEventListener("keyup", function (event) {
+                    if (event.keyCode === 13) {
+                        if (fieldE.value == '') {
+                            storedScoreE += 0;
+                        } else {
+                            storedScoreE += parseInt(fieldE.value);  // Corrected here
+                        }
+                        scoreE.innerHTML = storedScoreE;
+                        fieldE.value = '';
+                        event.preventDefault();  // Add this to prevent form submission or page refresh
+                    }
+                });
+                
+        
+        resetE.addEventListener("click", function () {
+            storedScoreE = 0;
+            scoreE.innerHTML = storedScoreE;
+        });
+        
+        
+        
+        }
+
+    
     

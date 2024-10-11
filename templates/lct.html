@@ -68,7 +68,8 @@
             <button type="button" class="btn modalbtn rebutanbtn" id="btnA"   value="false" style="background: red;font-weight: bold;">A</button>
             <button type="button" class="btn  modalbtn rebutanbtn" id="btnB"   value="true" style="background:blue;font-weight: bold;">B</button>
             <button type="button" class="btn  modalbtn rebutanbtn" id="btnC"   value="true" style="background:yellow;font-weight: bold;">C</button>
-            <button type="button" class="btn  modalbtn rebutanbtn" id="rebutanD"   value="true" style="background:green;font-weight: bold;display: none;">D</button>
+            <button type="button" class="btn  modalbtn rebutanbtn" id="rebutanD"   value="true" style="background:green;font-weight: bold;">D</button>
+            <button type="button" class="btn  modalbtn rebutanbtn" id="btnE"   value="true" style="background:orange;font-weight: bold;display: none;">E</button>
             <button type="button" class="btn btn-info modalbtn" id="check"   value="false" data-dismiss='modal'><i class="fa fa-check"></i></button>
                       
           </div>
@@ -119,12 +120,19 @@
             <div id="resetC" class="button resetAll">reset</div>
         </div>
 
-        <div class="team" id="teamD" style="display: none;">
+        <div class="team" id="teamD" >
             <div id="D" class="label">D</div>
             <div id="scoreD" class="score">0</div>
             <input type="text" id="fieldD" class="field">
             <!-- <div id="addC" class="button addAll">+</div> -->
             <div id="resetD" class="button resetAll">reset</div>
+        </div>
+        <div class="team" id="teamE" style="display: none;">
+            <div id="E" class="label">E</div>
+            <div id="scoreE" class="score">0</div>
+            <input type="text" id="fieldE" class="field">
+            <!-- <div id="addC" class="button addAll">+</div> -->
+            <div id="resetE" class="button resetAll">reset</div>
         </div>
         <!-- <div id="timer" class="timer team">
             
@@ -432,6 +440,8 @@
         let labelB = document.getElementById('B');
         let labelC = document.getElementById('C');
         let labelD = document.getElementById('D');
+        let labelE = document.getElementById('E');
+
         {
         labelA.addEventListener('click',function(e){
             e.preventDefault();
@@ -453,6 +463,11 @@
             turn = 3;
             updateLabelBorders();
         })
+        labelE.addEventListener('click',(e)=>{
+            e.preventDefault();
+            turn = 4;
+            updateLabelBorders();
+        })
         }
         let logoKiri = document.getElementsByClassName('logo-kiri');
         let logoKanan = document.getElementsByClassName('logo-kanan');
@@ -470,6 +485,7 @@
               if(i==1)btnRebut[i].style.background = 'blue';
               if(i==2)btnRebut[i].style.background = 'yellow';
               if(i==3)btnRebut[i].style.background = 'green';
+              if(i==4)btnRebut[i].style.background = 'orange';
             }else{
               btnRebut[i].style.background = 'none';
             }
@@ -499,19 +515,19 @@
         })
         logoKanan[0].addEventListener('click',(e)=>{
             mode4 = !mode4;
-            document.getElementById('teamD').style.display = (mode4? 'flex' : 'none');
-            document.getElementById('rebutanD').style.display = (mode4? 'inline-flex' : 'none');
+            document.getElementById('teamE').style.display = (mode4? 'flex' : 'none');
+            document.getElementById('btnE').style.display = (mode4? 'inline-flex' : 'none');
         })
         if(mode4){
-           document.getElementById('teamD').style.display = 'flex';
-           document.getElementById('rebutanD').style.display = 'inline-flex';
+           document.getElementById('teamE').style.display = 'flex';
+           document.getElementById('btnE').style.display = 'inline-flex';
         }
 
         updateLabelBorders();
         logoKiri[0].addEventListener('click',function(e){
             turn++;
-            if(mode4)turn%=4;
-            else turn%=3
+            if(mode4)turn%=5;
+            else turn%=4
             updateLabelBorders();
            // console.log(turn);
         })
@@ -562,14 +578,15 @@
                 if(turn == 0)matrix[curI][curJ] = 10;
                 else if(turn == 1)matrix[curI][curJ]=20;
                 else if(turn == 2)matrix[curI][curJ]=30;
-                else matrix[curI][curJ]=40;
+                else if(turn == 3)matrix[curI][curJ]=40;
+                else matrix[curI][curJ]=50;
              //   console.log(matrix[curI][curJ]);
                 updateLabelBorders();
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: black;' >A</button>";
                  
                  turn = turn+1;
-                 if(mode4)turn%=4;
-                else turn%=3;
+                 if(mode4)turn%=5;
+                else turn%=4;
                 updateLabelBorders();
               //  console.log(turn);
                 closeSoal();
@@ -589,17 +606,21 @@
                  blocknow.innerHTML = "<button class='btn-custom marked' style='background: yellow;' >C</button>";
                  matrix[curI][curJ] = 2;
               //  console.log(matrix[curI][curJ]);
-            }else{
+            }else if(turn==3){
                 blocknow.innerHTML = "<button class='btn-custom marked' style='background: green;' >D</button>";
-                 matrix[curI][curJ] = 3;
+                matrix[curI][curJ] = 3;
+             //  console.log(matrix[curI][curJ]);
+           }else{
+                blocknow.innerHTML = "<button class='btn-custom marked' style='background: orange;' >E</button>";
+                 matrix[curI][curJ] = 4;
               //  console.log(matrix[curI][curJ]);
             }
                 
             // Check if any row has the same value in all elements
 
              turn = turn+1;
-             if(mode4)turn%=4;
-                else turn%=3;
+             if(mode4)turn%=5;
+                else turn%=4;
             updateLabelBorders();
             closeSoal();
         })
@@ -609,6 +630,8 @@
              tmpB = 0;
              tmpC = 0;
              tmpD = 0;
+             tmpE = 0;
+
           for(let i=0;i<6;i++){
             let sameRow = true;
             let e = blocks[i][0].firstElementChild;
@@ -684,8 +707,12 @@
                 bonusD = tmpD;
                 scoreD.innerHTML = storedScoreD;
 
-                if(mode4)turn%=4;
-                else turn%=3;
+                storedScoreE += (tmpE-bonusE)*correct;
+                bonusE = tmpE;
+                scoreE.innerHTML = storedScoreE;
+
+                if(mode4)turn%=5;
+                else turn%=4;
                 /*
           if(turn==0){
             labelA.style.border = 'solid black 1px';
@@ -737,6 +764,8 @@
           const btnB = document.getElementById("btnB");
           const btnC = document.getElementById("btnC");
           const btnD = document.getElementById("rebutanD");
+          const btnE = document.getElementById("btnE");
+
 
           // Set styles for each button
           btnA.style.background = "red";
@@ -750,6 +779,9 @@
 
           btnD.style.background = "green";
           btnD.style.fontWeight = "bold";
+
+          btnE.style.background = "orange";
+          btnE.style.fontWeight = "bold";
             boxQue.innerHTML = 'Pertanyaan';
                 boxAns.innerHTML = '';
         }
