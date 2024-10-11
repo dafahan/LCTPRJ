@@ -89,7 +89,7 @@ input:checked + .slider:before {
 
 .logo-kiri{
     position: fixed;
-    height: 76px;
+    height: 100px;
 }
 .logo-kiri>img{
     height: inherit;
