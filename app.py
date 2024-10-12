@@ -15,7 +15,7 @@ else:
     babak = arg1
     print(babak)
     filepath = f"soal/{babak}.csv"
-    if arg1 not in ['final','semifinal1','semifinal2','penyisihan1']:
+    if arg1 not in ['final','semifinal3','semifinal1','penyisihan1','penyisihan2','penyisihan3','penyisihan4','penyisihan5']:
        convert(filepath)
     
 
