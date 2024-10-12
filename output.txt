@@ -1,12 +1,12 @@
 soal:
 question_id;question;answer
+a1;Diketahui (f o g)(x) = 2x + 4 dan f(x) =x – 2. Tentukan fungsi g (x)!;Jawaban:<br>(f o g)(x) = 2x + 4<br>f(g(x)) = 2x + 4<br>g(x) – 2 = 2x + 4<br>g(x) = 2x + 4 + 2<br>g(x) = 2x + 6
 a2;Istilah untuk proses pada paket yang akan meneruskan paket data dari satu jaringan menuju ke jaringan lainnya melalui internet adalah?;Routing
 a3;Jenis sistem operasi yang dirancang untuk perangkat khusus dengan sumber daya terbatas, seperti perangkat IoT, mesin cuci, router, atau perangkat medis adalah?;Sistem operasi embeded
 a4;Dalam konteks jaringan komputer, LAN merupakan singkatan dari?;Local Area Network
 a5;<img src="static/soalGambar/soal3penyisihan1.png" />;2 4 6 8 10
 a6;Jenis sistem operasi yang dimiliki dan dikendalikan oleh perusahaan atau individu tertentu, yang membatasi pengguna dalam hal distribusi, modifikasi, dan penggunaan adalah?;Sistem operasi proprietary
 b1;Shortcut yang digunakan untuk membuat teks menjadi miring atau cetak miring di Microsoft Word adalah?; CTRL+I 
-b2;<img src="static/soalGambar/soal1penyisihan1.png" />; Menampilkan semua angka ganjil antara 1 dan 100
 b3;Formula/fungsi apa di Microsoft Excel yang memungkinkan Anda untuk menghitung jumlah nilai dalam rentang sel?;SUM()
 b4;Perangkat lunak yang digunakan untuk membuat, mengelola, dan memanipulasi basis data adalah?;DBMS (Database Management System)ta
 b5;Diketahui bilangan desimal 875(10). Jika di konversi ke biner, nilainya adalah?;1101101011(2)
