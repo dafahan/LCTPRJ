@@ -1,0 +1,47 @@
+"question";"answer"
+"<img src=""static/soalGambar/soal1penyisihan1.png"" />";" Menampilkan semua angka ganjil antara 1 dan 100"
+"Apa nama bahasa markup yang digunakan untuk membuat dan menyusun halaman web di World Wide Web";"HTML (HyperText Markup Language)"
+"Shortcut yang digunakan untuk membuat teks menjadi miring atau cetak miring di Microsoft Word adalah?";" CTRL+I "
+"Jika g (x) = 3x – 2 dan (g o f) (x) = 3x² +1, maka tentukan f (x) !";"(g o f) (x) = 3x² + 1 
+g(f (x)) = 3x² + 1
+3(f (x)) – 2 = 3x² + 1
+3.f (x) = 3x² + 3
+f (x) = x²  + 1"
+"Istilah untuk proses pada paket yang akan meneruskan paket data dari satu jaringan menuju ke jaringan lainnya melalui internet adalah?";"Routing"
+"Perangkat lunak yang digunakan untuk membuat, mengelola, dan memanipulasi basis data adalah?";"DBMS (Database Management System)ta"
+"Jenis sistem operasi yang dimiliki dan dikendalikan oleh perusahaan atau individu tertentu, yang membatasi pengguna dalam hal distribusi, modifikasi, dan penggunaan adalah?";"Sistem operasi proprietary"
+"Dalam sistem bilangan biner, apa hasil dari operasi 1011 + 1101?";"10100"
+"Formula/fungsi apa di Microsoft Excel yang memungkinkan Anda untuk menghitung jumlah nilai dalam rentang sel?";"SUM()"
+"Perangkat lunak yang mengatur sumber daya dari perangkat keras dan perangkat lunak, serta menjalankan operasi dasar sistem lainnya adalah?";" sistem operasi"
+"Jaringan yang mencakup sebuah Negara disebut dengan?";"WAN/Wide Area Network"
+"P(A) adalah himpunan kuasa (power set) untuk himpunan A. himpunan yang anggotanya merupakan semua bagian dari A, termasuk himpunan kosong dan himpunan A itu sendiri. Jika A = {1,2,3,4}, tentukan berapa banyak anggota (elemen ) P(A)";"D.16"
+"<img src=""static/soalGambar/soal2penyisihan1.png"" />";"24"
+"Output device di PC yang berfungsi sebagai tampilan atau visual output adalah";"Monitor"
+"Sistem bilangan yang menggunakan radiks atau basis 16 adalah?";"Heksadesimal"
+"Jenis media penyimpanan data secara permanen pada komputer yang tidak dapat diubah adalah";"Rom"
+"Apa tab di Microsoft Excel 2021 yang digunakan untuk memformat angka?";"Home"
+"Diketahui bilangan desimal 875(10). Jika di konversi ke biner, nilainya adalah?";"1101101011(2)"
+"Dalam konteks manajemen basis data, apa itu 'CRUD'?";"Create, Read, Update, Delete"
+"<img src=""static/soalGambar/soal3penyisihan1.png"" />";"2 4 6 8 10"
+"Software yang dibutuhkan untuk menginstalasi suatu sistem operasi dalam sistem operasi yang sudah ada adalah?";"virtual machine atau hypervisor"
+"Teknologi jaringan yang memungkinkan pengiriman data tanpa menggunakan kabel adalah?";"Wireless"
+"Dalam seleksi penerima beasiswa prestasi, setiap mahasiswa harus lulus tes TPA (Tes Potensi Akademik) dan Bahasa. Dari 180 peserta terdapat 103 orang dinyatakan lulus tes TPA dan 142 orang lulus tes Bahasa. Banyak siswa yang dinyatakan lulus sebagai penerima beasiswa prestasi adalah. .";"C.65 orang"
+"Harddisk, CD, DVD, USB Flashdisk merupakan perangkat keras computer yang berfungsi sebagai?";"Media penyimpanan"
+"Apa fitur di Microsoft Word yang memungkinkan Anda untuk membuat label dan surat massal?";" Mail Merge/Penggabungan Surat"
+"Dalam konteks jaringan komputer, LAN merupakan singkatan dari?";"Local Area Network"
+"<img src=""static/soalGambar/soal4penyisihan1.png"" />";"-15"
+"Jenis sistem operasi yang dirancang untuk perangkat khusus dengan sumber daya terbatas, seperti perangkat IoT, mesin cuci, router, atau perangkat medis adalah?";"Sistem operasi embeded"
+"Diketahui (f o g)(x) = 2x + 4 dan f(x) =x – 2. Tentukan fungsi g (x)!
+";"Jawaban:
+(f o g)(x) = 2x + 4
+f(g(x)) = 2x + 4
+g(x) – 2 = 2x + 4
+g(x) = 2x + 4 + 2
+g(x) = 2x + 6"
+"Berdasarkan jenis antarmuka, Microsoft Windows merupakan sistem operasi komputer yang berbasis";"GUI (Graphic User Interface)"
+"Berapa jumlah bit dalam komposisi bilangan biner kode ASCII berdasarkan Extend ASCII?";" 8 bit"
+"Perangkat lunak berbahaya yang bertujuan jahat dan dapat mencuri data dan mengonsumsi bandwith atau sumber daya lain tanpa seizin pemilik komputer adalah…";"Malware"
+"Apa nama versi Android yang diluncurkan setelah Android Marshmallow?";"Android Nougat"
+"Konversikan bilangan biner 10010110(2) ke dalam bilangan desimal.";"150(10)"
+"Apa nama tombol pada keyboard yang digunakan untuk menghapus karakter di sebelah kiri kursor?";"Backspace"
+"Jaringan yang digunakan untuk menghubungkan perangkat pribadi seperti smartphone, laptop, tablet, dan perangkat wearable lainnya dalam area yang sangat terbatas, seperti di sekitar individu atau dalam satu ruangan kecil adalah?";"PAN/ Personal Area Network"

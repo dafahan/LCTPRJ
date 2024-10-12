@@ -1,0 +1,48 @@
+"question";"answer"
+"Proses memasang program yang belum ada pada perangkat komputer disebut? ";"installasi"
+"Dalam konteks cloud computing, apa itu 'SaaS'?";"Software as a Service"
+"Diketahui bilangan oktal 116 (8). Jika di konversi ke desimal, nilainya adalah?";"78 (10)"
+"Kapasitas maksimal jalur komunikasi untuk melakukan proses pengiriman dan penerimaan data dalam satuan waktu tertentu adalah?";"bandwidth"
+"Perangkat keras yang mengubah sinyal digital menjadi sinyal analog (dan sebaliknya) untuk memungkinkan koneksi internet melalui saluran telepon adalah?";"Modem"
+"Berapa banyak kata yang terbentuk dari kata “STMIK”?";"5! = 5 x 4 x 3 x 2 x 1 = 120 buah kata"
+"Shortcut untuk membuat teks rata kiri di Microsoft Word adalah?";"CTRL+L"
+"Jika ada pseudocode yang menginstruksikan ""IF nilai >= 50 THEN lulus ELSE tidak lulus"", apa yang dilakukan oleh instruksi ini?";"Instruksi ini mengecek apakah nilai lebih besar atau sama dengan 50. Jika iya, hasilnya ""lulus"". Jika tidak, hasilnya ""tidak lulus""."
+"Tempat menyimpan data-data pekerjaan pemakai, di dalam GNU Linux, biasanya disimpan dalam direktori?";"/home"
+"Aplikasi apa yang menjadi dasar interaksi antarmuka antara webcam, komputer, dan printer?";"Driver Perangkat"
+"Bilangan ASCII merupakan kode yang digunakan untuk mewakili karakter angka maupun huruf dalam komputer. apa kepanjangan dari ASCII ?";"American Standard Code for Information Interchange"
+"Proses membawa informasi antar-end points di dalam sistem atau jaringan adalah?";"Transmisi"
+"Layanan yang mengenkripsi koneksi internet dan memungkinkan pengguna untuk menjelajahi web dengan aman dan anonym adalah?";"VPN (Virtual Private Network)"
+"Ada berapa cara 7 orang yang duduk mengelilingi meja dapat menempati ketujuh tempat duduk dengan urutan yang berlainan?";"Banyaknya cara duduk ada (7 – 1) ! = 6 ! = 6 . 5 . 4. 3 . 2 . 1 = 720 cara"
+"Ekstensi umum untuk file presentasi Microsoft PowerPoint adalah?";"PPT/PPTX"
+"Jelaskan perbedaan antara struktur “IF” dan “WHILE” dalam pseudocode!";"""IF"": Mengecek kondisi sekali dan melakukan tindakan jika kondisi benar.
+""WHILE"": Mengecek kondisi berulang kali dan melakukan tindakan selama kondisi benar.
+"
+"apa arti rwx pada pemberian hak akses di linux?";"read, write, execute"
+"Proses pengiriman data dari perangkat input ke komputer, dan dari komputer ke perangkat output disebut?";"Operasi Input/Output (I/O)"
+"Bilangan oktal 75 setara dengan bilangan biner ?";"111101"
+"Alat yang mengubah isyarat yang berupa daya sinyal analog kemudian diubah menjadi sinyal digital kemudian dapat dibaca oleh penerima atau sebaliknya adalah?";"Modem"
+"Perangkat lunak yang menyediakan alat-alat untuk menulis, mengedit, dan debugging kode program adalah?";"IDE (Integrated Development Environment)"
+"Diketahui fungsi f(x) = 6x - 3, g(x) = 5x + 4, dan (f o g)(a) = 81. Nilai a adalah?";"(f o g)(x) = f(5x+4)
+= 6 (5x+4) - 3
+= 30x + 21
+(f o g)(a) = 30a + 21 = 81 maka a=2
+"
+"Tombol keyboard untuk menghentikan slideshow di PowerPoint adalah?";"ESC"
+"<img src=""static/soalGambar/soal1penyisihan4.png"" />";"Output dari pseudocode adalah 54321. Penjelasan : Pseudocode ini membalikkan urutan digit dalam angka x dengan mengekstrak digit satu per satu dari belakang dan membentuk angka baru dengan urutan digit yang terbalik."
+"<img src=""static/soalGambar/soal2penyisihan4.png"" />";" Hasil akhir dari variabel sum adalah 30. Penjelasan : Pseudocode ini menjumlahkan semua bilangan
+genap dari 1 hingga n : 2+4+6+8+10 = 30.
+ 
+"
+"Program dalam Microsoft Office yang digunakan untuk membuat presentasi adalah?";"Microsoft PowerPoint"
+"Diketahui P={1,3,4, } Q={1,2,5,6} maka P∩Q adalah?";"{1}"
+"Perangkat yang menyediakan daya cadangan saat terjadi pemadaman listrik agar komputer bisa dimatikan dengan aman adalah?";"UPS (Uninterruptible Power Supply)"
+"Terletak diujung dari kabel yang digunakan untuk ditancapkan pada port atau interface untuk menghubungkan satu peralatan jaringan pada peralatan jaringan yang lain adalah?";"Konektor"
+"Tujuan pokok system computer adalah?";"Mengolah data menjadi informasi yang berguna."
+"Siapa saja pemilik hak akses file di linux?";"owner, group, other."
+"Bagian dari PC manakah yang memiliki fungsi untuk menghubungkan seluruh bagian dari komputer seperti CPU, RAM, Hard Disk?";"Motherboard"
+"Dalam sebuah permainan, skor Anda adalah 100110 dalam sistem biner. Skor teman Anda adalah 111010 dalam sistem biner. Siapa yang memiliki skor lebih tinggi?";"100110 = 38 dan 111010 = 58
+Skor teman lebih tinggi
+"
+"Sistem manajemen basis data relasional (RDBMS) yang bersifat open-source dan sekarang dimiliki oleh Oracle Corporation adalah?";"mySQL"
+"Perangkat lunak yang digunakan untuk mengakses internet dikenal sebagai?";"Web browser"
+"Apa ekstensi file yang umum digunakan untuk menyimpan dokumen Microsoft Word?";".docx"

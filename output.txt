@@ -1,36 +1,37 @@
 soal:
-a2;Antarmuka teks atau grafis yang digunakan oleh pengguna untuk berinteraksi dengan sistem operasi Linux adalah?;Shell
-a3;DEKLARASI<br>i : integer<br>DESKRIPSI<br>for i ← 3 to 5 do<br>write(i+2)<br>endfor<br>Output dari algoritma tersebut adalah?;5 6 7 
-a4;Tahun berapa HTML 1.0 dirilis?;1993
-a5;Simbol atau lambang yang digunakan untuk mewakili suatu bilangan disebut?;Angka
-a6;Tentukan banyaknya Permutasi yang terjadi jika akan disusun tiga huruf yang diambil dari abjad A,B,C,D,E!;60
-b1;Pada generasi komputer ke-2, terjadi penggunaan komponen utama berupa?;Transistor
-b2;Setelah proses instalasi selesai, apa yang perlu dilakukan sebelum dapat menggunakan Linux?;Reboot
-b3;Untuk mengetahui apakah komputer dalam jaringan sudah terhubung dengan komputer lain digunakan perintah?;Ping 
-b4;Himpunan bilangan real dan imajiner tersebut disebut dengan?;Bilangan Kompleks
-b5;Ada berapa lapisan yang terdapat pada OSI layer?;7 
-b6;Jika A1 berisi nilai 70 dan pada sel B1 berisi formula =IF(A1>=70,”LULUS”,”TIDAK LULUS”), maka hasil yang didapat pada B1 adalah?;LULUS
-c1;Cabang teknologi yang berhubungan dengan desain, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot adalah?;Robotika
-c2;Istilah yang digunakan untuk halaman pada Microsoft Excel disebut dengan?;Sheet
-c3;Untuk menyimpan suatu file dalam Microsoft Word, nama file maksimum berisi berapa karakter?;254
-c4;Sistem bilangan yang memiliki 10 simbol angka adalah ?;Desimal
-c5;Siapakah tokoh yang dianggap sebagai "Bapak Komputer"?;Charles Babbage
-c6;Formula pada Microsoft Excel untuk menghitung berapa banyak data maupun argumen yang berupa angka pada sekumpulan cell atau range adalah?;COUNT
-d1;Proses pengaturan urutan eksekusi program atau proses dalam sistem komputer disebut?;scheduling
-d2;C++, Basic  dan Java merupakan bahasa pemrograman tingkat?;Tinggi
-d3;Berapa nilai dari 27 mod 3?;0 
-d4;Aplikasi pengolah angka bawaan dari macOS bernama?;Numbers
-d5;Komputer pada generasi kedua menggantikan bahasa mesin dengan bahasa?;Bahasa Assembly 
-d6;START pseudocode<br><br>SET a = 5<br>SET b = 2<br>SET c = a + b<br>SET d = a - b<br>DISPLAY c, d<br><br>END pseudocode<br>Apakah output dari pseudocode diatas?;c=7, d=3
-e1;Pada tahun berapa World Wide Web (WWW) diperkenalkan kepada publik?;1993
-e2;Processor Cyrix 486SLC adalah processor pada generasi ke?;Generasi ke-4
-e3;DEKLARASI<br>i 	: integer<br>sum : integer<br>Begin<br>i ← 0<br>sum ← 5<br>While(i < 5)<br>sum ← sum + i <br>i ← i + 1<br>endwhile<br>end<br>Output dari algoritma di atas adalah?;15
-e4;Alat yang memiliki fungsi ganda yaitu sebagai input dan output disebut?;Terminal
-e5;Berapa jumlah tabung vakum yang digunakan pada komputer ENIAC?;18.000
-e6;Pada tahun berapakah generasi komputer yang ketiga dimulai?;1964
-f1;Diketahui : <br>P = { x | 5 < x < 25,  x ⋲ bilangan prima }<br>Q = { x | 4 < x < 14,  x ⋲ bilangan ganjil }<br>Maka tentukanlah anggota dari A ∩ B?;A ∩ B = {7,11,13}
-f2;Bagian dari CPU yang berfungsi untuk menangani masalah perhitungan aritmatika dan proses angka adalah?;ALU
-f3;Negara yang mempelopori perkembangan komputer generasi kelima adalah?;Jepang 
-f4;Perangkat Keras Komputer yang merupakan otak dari sebuah komputer yang mengontrol seluruh proses di komputer adalah?;Prosesor
-f5;Komputer diambil dari kosa kata “To compute”. Kata tersebut diambil dari bahasa?;Bahasa inggris
-f6;Secara default, Quick acces toolbar pada Microsoft Word berisi ikon?;Save, Undo, dan Redo
+question_id;question;answer
+a2;Istilah untuk proses pada paket yang akan meneruskan paket data dari satu jaringan menuju ke jaringan lainnya melalui internet adalah?;Routing
+a3;Jenis sistem operasi yang dirancang untuk perangkat khusus dengan sumber daya terbatas, seperti perangkat IoT, mesin cuci, router, atau perangkat medis adalah?;Sistem operasi embeded
+a4;Dalam konteks jaringan komputer, LAN merupakan singkatan dari?;Local Area Network
+a5;<img src="static/soalGambar/soal3penyisihan1.png" />;2 4 6 8 10
+a6;Jenis sistem operasi yang dimiliki dan dikendalikan oleh perusahaan atau individu tertentu, yang membatasi pengguna dalam hal distribusi, modifikasi, dan penggunaan adalah?;Sistem operasi proprietary
+b1;Shortcut yang digunakan untuk membuat teks menjadi miring atau cetak miring di Microsoft Word adalah?; CTRL+I 
+b2;<img src="static/soalGambar/soal1penyisihan1.png" />; Menampilkan semua angka ganjil antara 1 dan 100
+b3;Formula/fungsi apa di Microsoft Excel yang memungkinkan Anda untuk menghitung jumlah nilai dalam rentang sel?;SUM()
+b4;Perangkat lunak yang digunakan untuk membuat, mengelola, dan memanipulasi basis data adalah?;DBMS (Database Management System)ta
+b5;Diketahui bilangan desimal 875(10). Jika di konversi ke biner, nilainya adalah?;1101101011(2)
+b6;Sistem bilangan yang menggunakan radiks atau basis 16 adalah?;Heksadesimal
+c1;Jaringan yang digunakan untuk menghubungkan perangkat pribadi seperti smartphone, laptop, tablet, dan perangkat wearable lainnya dalam area yang sangat terbatas, seperti di sekitar individu atau dalam satu ruangan kecil adalah?;PAN/ Personal Area Network
+c2;Apa tab di Microsoft Excel 2021 yang digunakan untuk memformat angka?;Home
+c3;Dalam konteks manajemen basis data, apa itu 'CRUD'?;Create, Read, Update, Delete
+c4;Jenis media penyimpanan data secara permanen pada komputer yang tidak dapat diubah adalah;Rom
+c5;Apa nama bahasa markup yang digunakan untuk membuat dan menyusun halaman web di World Wide Web;HTML (HyperText Markup Language)
+c6;Perangkat lunak berbahaya yang bertujuan jahat dan dapat mencuri data dan mengonsumsi bandwith atau sumber daya lain tanpa seizin pemilik komputer adalah…;Malware
+d1;Apa nama tombol pada keyboard yang digunakan untuk menghapus karakter di sebelah kiri kursor?;Backspace
+d2;Output device di PC yang berfungsi sebagai tampilan atau visual output adalah;Monitor
+d3;Apa nama versi Android yang diluncurkan setelah Android Marshmallow?;Android Nougat
+d4;<img src="static/soalGambar/soal4penyisihan1.png" />;-15
+d5;Dalam sistem bilangan biner, apa hasil dari operasi 1011 + 1101?;10100
+d6;Berapa jumlah bit dalam komposisi bilangan biner kode ASCII berdasarkan Extend ASCII?; 8 bit
+e1;Software yang dibutuhkan untuk menginstalasi suatu sistem operasi dalam sistem operasi yang sudah ada adalah?;virtual machine atau hypervisor
+e2;Jika g (x) = 3x – 2 dan (g o f) (x) = 3x² +1, maka tentukan f (x) !;(g o f) (x) = 3x² + 1<br>g(f (x)) = 3x² + 1<br>3(f (x)) – 2 = 3x² + 1<br>3.f (x) = 3x² + 3<br>f (x) = x²  + 1
+e3;Jaringan yang mencakup sebuah Negara disebut dengan?;WAN/Wide Area Network
+e4;Perangkat lunak yang mengatur sumber daya dari perangkat keras dan perangkat lunak, serta menjalankan operasi dasar sistem lainnya adalah?; sistem operasi
+e5;Konversikan bilangan biner 10010110(2) ke dalam bilangan desimal.;150(10)
+e6;P(A) adalah himpunan kuasa (power set) untuk himpunan A. himpunan yang anggotanya merupakan semua bagian dari A, termasuk himpunan kosong dan himpunan A itu sendiri. Jika A = {1,2,3,4}, tentukan berapa banyak anggota (elemen ) P(A);D.16
+f1;Harddisk, CD, DVD, USB Flashdisk merupakan perangkat keras computer yang berfungsi sebagai?;Media penyimpanan
+f2;Teknologi jaringan yang memungkinkan pengiriman data tanpa menggunakan kabel adalah?;Wireless
+f3;Apa fitur di Microsoft Word yang memungkinkan Anda untuk membuat label dan surat massal?; Mail Merge/Penggabungan Surat
+f4;<img src="static/soalGambar/soal2penyisihan1.png" />;24
+f5;Berdasarkan jenis antarmuka, Microsoft Windows merupakan sistem operasi komputer yang berbasis;GUI (Graphic User Interface)
+f6;Dalam seleksi penerima beasiswa prestasi, setiap mahasiswa harus lulus tes TPA (Tes Potensi Akademik) dan Bahasa. Dari 180 peserta terdapat 103 orang dinyatakan lulus tes TPA dan 142 orang lulus tes Bahasa. Banyak siswa yang dinyatakan lulus sebagai penerima beasiswa prestasi adalah. .;C.65 orang

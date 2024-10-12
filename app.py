@@ -15,7 +15,7 @@ else:
     babak = arg1
     print(babak)
     filepath = f"soal/{babak}.csv"
-    if arg1 not in ['final','semifinal1','semifinal2']:
+    if arg1 not in ['final','semifinal1','semifinal2','penyisihan1']:
        convert(filepath)
     
 
@@ -31,6 +31,7 @@ def retrieve():
 
      
 #C:\xampp\htdocs\prototypelct\readcsv.py
+
 
 @app.route('/timeUp.mp3')
 def send_timeup(): 

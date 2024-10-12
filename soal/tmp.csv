@@ -1,0 +1,11 @@
+question_id;question;answer
+f2;Jenis sistem operasi yang dimiliki dan dikendalikan oleh perusahaan atau individu tertentu, yang membatasi pengguna dalam hal distribusi, modifikasi, dan penggunaan adalah?;Sistem operasi proprietary
+f3;Software yang dibutuhkan untuk menginstalasi suatu sistem operasi dalam sistem operasi yang sudah ada adalah?;virtual machine atau hypervisor
+f4;Dalam sistem bilangan biner, apa hasil dari operasi 1011 + 1101?;10100
+f5;Sistem bilangan yang menggunakan radiks atau basis 16 adalah?;Heksadesimal
+f6;Diketahui (f o g)(x) = 2x + 4 dan f(x) =x – 2. Tentukan fungsi g (x)!\\;
+g(f (x)) = 3x² + 1\\;;
+g(x) = 2x + 4 + 2\\;;
+g(x) = 2x + 6;;
+g(x) – 2 = 2x + 4\\;;
+;Jawaban:\\;
