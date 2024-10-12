@@ -4,7 +4,7 @@ a1;Diketahui (f o g)(x) = 2x + 4 dan f(x) =x – 2. Tentukan fungsi g (x)!;Jawab
 a2;Istilah untuk proses pada paket yang akan meneruskan paket data dari satu jaringan menuju ke jaringan lainnya melalui internet adalah?;Routing
 a3;Jenis sistem operasi yang dirancang untuk perangkat khusus dengan sumber daya terbatas, seperti perangkat IoT, mesin cuci, router, atau perangkat medis adalah?;Sistem operasi embeded
 a4;Dalam konteks jaringan komputer, LAN merupakan singkatan dari?;Local Area Network
-a5;<img src="static/soalGambar/soal3penyisihan1.png" />;2 4 6 8 10
+a5;<img src="static/soalgambar/soal3penyisihan1.png" />;2 4 6 8 10
 a6;Jenis sistem operasi yang dimiliki dan dikendalikan oleh perusahaan atau individu tertentu, yang membatasi pengguna dalam hal distribusi, modifikasi, dan penggunaan adalah?;Sistem operasi proprietary
 b1;Shortcut yang digunakan untuk membuat teks menjadi miring atau cetak miring di Microsoft Word adalah?; CTRL+I 
 b3;Formula/fungsi apa di Microsoft Excel yang memungkinkan Anda untuk menghitung jumlah nilai dalam rentang sel?;SUM()
@@ -20,7 +20,7 @@ c6;Perangkat lunak berbahaya yang bertujuan jahat dan dapat mencuri data dan men
 d1;Apa nama tombol pada keyboard yang digunakan untuk menghapus karakter di sebelah kiri kursor?;Backspace
 d2;Output device di PC yang berfungsi sebagai tampilan atau visual output adalah;Monitor
 d3;Apa nama versi Android yang diluncurkan setelah Android Marshmallow?;Android Nougat
-d4;<img src="static/soalGambar/soal4penyisihan1.png" />;-15
+d4;<img src="static/soalgambar/soal4penyisihan1.png" />;-15
 d5;Dalam sistem bilangan biner, apa hasil dari operasi 1011 + 1101?;10100
 d6;Berapa jumlah bit dalam komposisi bilangan biner kode ASCII berdasarkan Extend ASCII?; 8 bit
 e1;Software yang dibutuhkan untuk menginstalasi suatu sistem operasi dalam sistem operasi yang sudah ada adalah?;virtual machine atau hypervisor
@@ -32,6 +32,6 @@ e6;P(A) adalah himpunan kuasa (power set) untuk himpunan A. himpunan yang anggot
 f1;Harddisk, CD, DVD, USB Flashdisk merupakan perangkat keras computer yang berfungsi sebagai?;Media penyimpanan
 f2;Teknologi jaringan yang memungkinkan pengiriman data tanpa menggunakan kabel adalah?;Wireless
 f3;Apa fitur di Microsoft Word yang memungkinkan Anda untuk membuat label dan surat massal?; Mail Merge/Penggabungan Surat
-f4;<img src="static/soalGambar/soal2penyisihan1.png" />;24
+f4;<img src="static/soalgambar/soal2penyisihan1.png" />;24
 f5;Berdasarkan jenis antarmuka, Microsoft Windows merupakan sistem operasi komputer yang berbasis;GUI (Graphic User Interface)
 f6;Dalam seleksi penerima beasiswa prestasi, setiap mahasiswa harus lulus tes TPA (Tes Potensi Akademik) dan Bahasa. Dari 180 peserta terdapat 103 orang dinyatakan lulus tes TPA dan 142 orang lulus tes Bahasa. Banyak siswa yang dinyatakan lulus sebagai penerima beasiswa prestasi adalah. .;C.65 orang
